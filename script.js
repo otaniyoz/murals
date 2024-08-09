@@ -40,6 +40,8 @@ window.onload = () => {
   }
 
   function openModal() {
+    // modal is supposed to open on pointerdown. however, on mobile, or, perhaps, chrome in particular, openModal() is also triggered on scroll. to address this behaviour, i am tracking scrolling using pointermove and pointerup event listeners, and a scrolling variable.
+    if (scrolling) return;
     const modal = document.createElement('div');
     const imageDescriptionContainer = document.createElement('div');
     const clonedImage = this.cloneNode(true);
@@ -92,6 +94,8 @@ window.onload = () => {
             
             col.appendChild(img);
             img.addEventListener('pointerdown', openModal);
+            img.addEventListener('pointermove', () => { scrolling = true; });
+            img.addEventListener('pointerup', () => { scrolling = false; })
             imageCount++;
           });
         }
@@ -117,6 +121,7 @@ window.onload = () => {
 
   let prevVW = 0;
   let columns = 1;
+  let scrolling = false;
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
   const muralsContainer = document.getElementById('murals-container');
   const title = document.getElementById('title');

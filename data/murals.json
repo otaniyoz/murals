@@ -1,0 +1,115 @@
+{
+  "kazakhstan": {
+    "title": "Kazakhstan",
+    "images": [
+      {
+        "filename": "38_kunayev_almaty-kazakhstan-0",
+        "alt": "Let's fear together",
+        "title": "Let's fear together",
+        "category": [
+          "Animals"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "38 Kunayev street, Almaty",
+        "ratio": 1.33
+      },
+      {
+        "filename": "71_kabanbay_batyr_almaty-kazakhstan-0",
+        "alt": "Ana",
+        "title": "Ana",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "71 Kabanbay batyr street, Almaty",
+        "ratio": 1.00
+      },
+      {
+        "filename": "16_dostyk_almaty-kazakhstan-0",
+        "alt": "Bukreyev",
+        "title": "Bukreyev",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "16 Dostyk avenue, Almaty",
+        "ratio": 1.00
+      },
+      {
+        "filename": "31_kurmangazy_almaty-kazakhstan-0",
+        "alt": "Balam",
+        "title": "Balam",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "31 Kurmangazy street, Almaty",
+        "ratio": 1.33
+      },
+      {
+        "filename": "31_kurmangazy_almaty-kazakhstan-1",
+        "alt": "Space",
+        "title": "Space",
+        "category": [
+          "People", "Space"
+        ],
+        "year": 0,
+        "author": "Repas workshop", 
+        "location": "31 Kurmangazy street, Almaty",
+        "ratio": 1.33
+      },
+      {
+        "filename": "33_kurmangazy_almaty-kazakhstan-0",
+        "alt": "",
+        "title": "Unknown",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "33 Kurmangazy street, Almaty",
+        "ratio": 1.33
+      },
+      {
+        "filename": "59_abylaikhan_almaty-kazakhstan-0",
+        "alt": "",
+        "title": "Snow leopard",
+        "category": [
+          "Animals", "Cars"
+        ],
+        "year": 0,
+        "author": "Neon shaman", 
+        "location": "59 Abylai Khan avenue, Almaty",
+        "ratio": 1.33
+      },
+      {
+        "filename": "101_panfilov_almaty-kazakhstan-0",
+        "alt": "Batyr",
+        "title": "Batyr",
+        "category": [
+          "People", "Artists"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "101 Panfilov street, Almaty",
+        "ratio": 0.75
+      },
+      {
+        "filename": "101_panfilov_almaty-kazakhstan-1",
+        "alt": "Batyr",
+        "title": "Batyr",
+        "category": [
+          "People", "Artists"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "101 Panfilov street, Almaty",
+        "ratio": 0.75
+      }
+    ]
+  }
+}

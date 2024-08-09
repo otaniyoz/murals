@@ -53,7 +53,7 @@ window.onload = () => {
     modal.appendChild(imageDescriptionContainer);
     document.children[0].children[1].appendChild(modal);
     document.children[0].children[1].style.overflowY = 'hidden';
-    modal.addEventListener('pointerdown', removeModal);
+    modal.addEventListener('click', removeModal);
     document.addEventListener('keyup', handleKeyPress);
   }
 

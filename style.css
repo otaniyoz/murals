@@ -85,7 +85,6 @@ a:hover {
 img {
   max-width: 100%;
   max-height: 100%;
-  aspect-ratio: auto;
   background: var(--background-secondary);
 }
 .row {
@@ -112,28 +111,26 @@ img {
   overflow: hidden;
   transition: 0.75s;
   align-items: center;
+  justify-content: center;
   background: var(--background-main);
 }
 .image-description-container {
   gap: 1vmax;
   display: flex;
   max-width: 100%;
-  max-height: 100%;
   flex-flow: column nowrap;
   justify-content: flex-start;
 }
 @media screen and (min-width: 1024px) {
   .modal-container {
-    padding: 2vmin; 
+    padding: 2vmax 12vmax;
   }
   .image-description-container {
     display: flex;
-    max-width: 100%;
     max-height: 100%;
     flex-flow: row nowrap;
   }
 }
-
 @media (prefers-color-scheme: light) {
   :root {
     --text-main: #111111;

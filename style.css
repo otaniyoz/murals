@@ -38,6 +38,7 @@ body {
   padding: 0;
 }
 header {
+  overflow: visible;
   padding: 1vmin 0 4vmax 0;
 }
 nav {
@@ -156,6 +157,10 @@ svg {
   justify-content: flex-start;
 }
 @media screen and (min-width: 1024px) {
+  h1 {
+    transform: rotate(-2.5deg);
+    margin-top: 2vmax;
+  }
   .modal-container {
     padding: 12vmax;
   }

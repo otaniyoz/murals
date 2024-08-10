@@ -8,7 +8,7 @@ window.onload = () => {
     let containerWidth = vw - 4 * vmin;
     if (textWidth <= containerWidth) {
       let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
-      while (textWidth <= containerWidth && fontSize < 480) {
+      while (textWidth <= containerWidth && fontSize < 640) {
         fontSize += 0.5;
         element.style.fontSize = `${fontSize}px`;
         textWidth = parseFloat(window.getComputedStyle(element).width);

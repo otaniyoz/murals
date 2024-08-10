@@ -112,6 +112,8 @@ img {
   color: var(--text-secondary);
 }
 svg {
+  width: 4vh;
+  height: 4vh;
   opacity: 0.3;
   stroke: none;
   fill: var(--text-main);
@@ -162,7 +164,7 @@ svg {
     margin-top: 2vmax;
   }
   .modal-container {
-    padding: 12vmax;
+    padding: 4vw 12vw;
   }
   .image-description-container {
     display: flex;
@@ -170,11 +172,10 @@ svg {
     flex-flow: row nowrap;
   }
   #close {
-    top: 1vmax;
-    left: calc(52vw - 6vmax - 2vmin);
-    width: 12vmax;
-    height: 12vmax;
-    margin: 0 auto;
+    top: 0;
+    width: 4vmax;
+    height: 4vmax;
+    left: calc(52vw - 4vmax - 2vmin);
   }
 }
 @media (prefers-color-scheme: light) {

@@ -24,37 +24,72 @@ window.onload = () => {
     }
   }
 
-  function removeModal(event) {
+  function hideModal(event) {
     // close modal when user clicked only on it and not on its children
     if ((event.type === 'pointerdown' && event.target === this) || event.type === 'keyup') {
-      document.getElementById('modal').remove();
+      // document.getElementById('modal').remove();
+      document.getElementById('modal').classList.add('hidden');
       document.removeEventListener('keypress', handleKeyPress);
       document.children[0].children[1].style.overflowY = 'scroll';
     }
   }
 
   function handleKeyPress(event) {
-    if (event.key === 'Escape') removeModal(event);
-    else if (event.key === 'ArrowRight') console.log(event.key);
-    else if (event.key === 'ArrowLeft') console.log(event.key);
+    if (event.key === 'Escape') hideModal(event);
+    else if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') nextImage(event);
   }
 
-  function openModal() {
+  function initModal() {
     const modal = document.createElement('div');
     const imageDescriptionContainer = document.createElement('div');
-    const clonedImage = this.cloneNode(true);
+    const image = document.createElement('img');
     const imageDescription = document.createElement('p');
     modal.id = 'modal';
     modal.classList.add('modal-container');
-    imageDescription.textContent = `‘${clonedImage.dataset['title']}’ by ${clonedImage.dataset['author']}. ${clonedImage.dataset['location']}, ${clonedImage.dataset['country']}`;
     imageDescriptionContainer.classList.add('image-description-container');
-    imageDescriptionContainer.appendChild(clonedImage);
+    imageDescriptionContainer.appendChild(image);
     imageDescriptionContainer.appendChild(imageDescription);
+    modal.classList.add('hidden');
     modal.appendChild(imageDescriptionContainer);
     document.children[0].children[1].appendChild(modal);
     document.children[0].children[1].style.overflowY = 'hidden';
-    modal.addEventListener('click', removeModal);
+    modal.addEventListener('pointerdown', hideModal);
     document.addEventListener('keyup', handleKeyPress);
+  }
+
+  function showModal(event) {
+    const modal = document.getElementById('modal');
+    const imageDescriptionContainer = modal.children[0].children;
+    const image = event.target;
+    imageDescriptionContainer[0].src = `images/${image.id}.jpg`;
+    imageDescriptionContainer[0].setAttribute('data-src', image.id);
+    imageDescriptionContainer[1].textContent = `‘${image.dataset['title']}’ by ${image.dataset['author']}. ${image.dataset['location']}, ${image.dataset['country']}`;
+    modal.classList.remove('hidden');
+  }
+
+  function nextImage(event) {
+    let i = -1;
+    let found = false;
+    const modal = document.getElementById('modal');
+    const imageDescriptionContainer = modal.children[0].children;
+    while (i < imageFileNames.length && !found) {
+      i++;
+      if (imageFileNames[i] === imageDescriptionContainer[0].dataset.src) {
+        if (event.key === 'ArrowRight') {
+          i = (i + 1) % imageFileNames.length; 
+          found = true;         
+        }
+        else if (event.key === 'ArrowLeft') {
+          i = i - 1;
+          if (i < 0) i = imageFileNames.length - 1;
+          found = true;
+        }
+      }
+    };
+    const newImage = document.getElementById(imageFileNames[i]);
+    imageDescriptionContainer[0].src = `images/${newImage.id}.jpg`;
+    imageDescriptionContainer[0].setAttribute('data-src', newImage.id);
+    imageDescriptionContainer[1].textContent = `‘${newImage.dataset['title']}’ by ${newImage.dataset['author']}. ${newImage.dataset['location']}, ${newImage.dataset['country']}`;
   }
 
   function buildGallery() {
@@ -80,18 +115,16 @@ window.onload = () => {
             const col = document.getElementById(`col-${i % columns}`);
             const img = document.createElement('img');
             img.alt = image.alt;
-            img.style.aspectRatio = `1/${image.ratio}`;
-
-            img.setAttribute('data-src', `images/${image.filename}.jpg`);
+            img.id = image.filename;
+            imageFileNames.push(image.filename);
             img.setAttribute('data-country', data[key].title);
             img.setAttribute('data-year', image.year);
             img.setAttribute('data-title', image.title);
             img.setAttribute('data-author', image.author);
             img.setAttribute('data-location', image.location);
             img.setAttribute('data-category', image.category);
-            
             col.appendChild(img);
-            img.addEventListener('click', openModal);
+            img.addEventListener('click', showModal);
             imageCount++;
           });
         }
@@ -117,19 +150,20 @@ window.onload = () => {
 
   let prevVW = 0;
   let columns = 1;
+  const imageFileNames = [];
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
   const muralsContainer = document.getElementById('murals-container');
   const title = document.getElementById('title');
   const counter = document.getElementById('counter');
+  initModal();
   buildGallery();
-  fitTextToWidth(title);  
 
   // sets up intersection observer to load images as they appear in the view
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const lazyImage = entry.target;
-        lazyImage.src = lazyImage.dataset.src;
+        lazyImage.src = `images/${lazyImage.id}.jpg`;
         io.unobserve(lazyImage);
       }
     });
@@ -153,4 +187,5 @@ window.onload = () => {
   mo.observe(muralsContainer, config);
   
   window.addEventListener('resize', resizePage);
+  fitTextToWidth(title);
 };

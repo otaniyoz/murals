@@ -1,26 +1,19 @@
-"use strict";
+'use strict';
 window.onload = () => {
   function fitTextToWidth(element) {
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
-    const vmin = Math.min(vw / 100, vh / 100);
-    let textWidth = parseFloat(window.getComputedStyle(element).width);
-    let containerWidth = vw - 4 * vmin;
-    if (textWidth <= containerWidth) {
-      let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
-      while (textWidth <= containerWidth && fontSize < 640) {
-        fontSize += 0.5;
-        element.style.fontSize = `${fontSize}px`;
-        textWidth = parseFloat(window.getComputedStyle(element).width);
-      }
-    }
-    else if (textWidth >= containerWidth) {
-      let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
-      while (textWidth >= containerWidth && fontSize > 16) {
-        fontSize -= 0.5;
-        element.style.fontSize = `${fontSize}px`;
-        textWidth = parseFloat(window.getComputedStyle(element).width);
-      }
+    clearTimeout(timeoutId);
+
+    let iter = 0;
+    const minSize = 16;
+    const maxSize = 640;
+    let textWidth = element.scrollWidth;
+    const containerWidth = element.parentNode.clientWidth;
+    let fontSize = parseFloat(window.getComputedStyle(element).fontSize);
+    while (textWidth !== containerWidth && iter < 100 && fontSize > minSize && fontSize < maxSize) {
+      element.style.fontSize = `${fontSize}px`;
+      textWidth = element.scrollWidth;
+      fontSize += 0.1 * (containerWidth - textWidth);
+      iter++;
     }
   }
 
@@ -29,7 +22,7 @@ window.onload = () => {
     if ((event.type === 'pointerdown' && event.target === this) || event.type === 'keyup' || this.id === 'close') {
       document.getElementById('modal').classList.add('hidden');
       document.removeEventListener('keypress', handleKeyPress);
-      document.children[0].children[1].style.overflowY = 'scroll';
+      document.children[0].children[1].style.overflowY = 'visible';
     }
   }
 
@@ -40,12 +33,12 @@ window.onload = () => {
 
   function initModal() {
     const modal = document.createElement('div');
-    const imageDescriptionContainer = document.createElement('div');
-    const image = document.createElement('img');
+    const image = document.createElement('img');  
     const imageDescription = document.createElement('p');
     const rightButton = document.createElement('button');
     const leftButton = document.createElement('button');
     const closeButton = document.createElement('button');
+    const imageDescriptionContainer = document.createElement('div');
     modal.id = 'modal';
     rightButton.id = 'right';
     leftButton.id = 'left';
@@ -160,11 +153,12 @@ window.onload = () => {
     });
     if (sizeChanged && breakPointCrossed) {
       buildGallery();
-      prevVW = window.innerWidth;
+      prevVW = vw;
     }
-    fitTextToWidth(title);
+    timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
   }
 
+  let timeoutId = null;
   let prevVW = 0;
   let columns = 1;
   const imageFileNames = [];
@@ -204,5 +198,5 @@ window.onload = () => {
   mo.observe(muralsContainer, config);
   
   window.addEventListener('resize', resizePage);
-  fitTextToWidth(title);
+  timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
 };

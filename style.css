@@ -129,11 +129,10 @@ svg {
   width: 12vmax;
 }
 #close {
-  top: 4vmax;
-  left: calc(52vw - 6vmax - 2vmin);
+  top: 4vmin;
   width: 12vmax;
   height: 12vmax;
-  margin: 0 auto;
+  left: calc(52vw - 6vmax - 2vmin);
 }
 .modal-container {
   top: 0;
@@ -167,12 +166,10 @@ svg {
     padding: 4vw 12vw;
   }
   .image-description-container {
-    display: flex;
     max-height: 100%;
     flex-flow: row nowrap;
   }
   #close {
-    top: 0;
     width: 4vmax;
     height: 4vmax;
     left: calc(52vw - 4vmax - 2vmin);

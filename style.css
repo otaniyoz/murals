@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "IBM Plex Sans Condensed";
+  font-family: "Sedgwick Ave Display";
+  src: url("fonts/sedgwickavedisplay-regular-webfont.woff") format("woff");
   font-kerning: normal;
-  font-weight: 700;
   font-display: swap;
   font-style: normal;
-  src: url("fonts/IBMPlexSansCondensed-Bold.woff") format("woff");
+  font-weight: 400;
 }
 @font-face {
   font-family: "IBM Plex Sans";
@@ -19,6 +19,7 @@
   
   --text-main: #f8f8f2;
   --text-accent: rgb(255, 69, 0);
+  --text-secondary: #888888;
   --background-main: #111111; 
   --background-secondary: #494949;
  }
@@ -37,7 +38,7 @@ body {
   padding: 0;
 }
 header {
-	padding: 1vmin 0 4vmax 0;
+  padding: 1vmin 0 4vmax 0;
 }
 nav {
   padding-bottom: 1vmax;
@@ -45,16 +46,16 @@ nav {
 h1 {
   z-index: -12;
   display: block;
-  font-weight: 700;
-  line-height: 0.8em;
+  padding: 0 1vw;
+  font-weight: 400;
+  overflow: visible;
   margin-left: -1vw;
-  padding: 0 0.5vw;
+  line-height: 0.9em;
   width: fit-content;
   white-space: nowrap;
-  position: relative;
-  overflow: hidden;
+  transform: rotate(-5deg);
   color: var(--text-accent);
-  font-family: "IBM Plex Sans Condensed";
+  font-family: "Sedgwick Ave Display";
 }
 body {
   width: 100%;
@@ -83,23 +84,53 @@ a:hover {
   text-decoration-color: var(--text-accent);
 }
 img {
-/*  max-width: 100%;*/
   max-height: 100%;
   background: var(--background-secondary);
 }
 .row {
-	gap: 1.5vmax;
+	gap: 2vmax;
 	display: flex;
 	flex-flow: row nowrap;
 }
 .col {
-	width: 100%;
-	gap: 1.5vmax;
-  display: flex;
+	gap: 2vmax;
+  width: 100%;
+	display: flex;
 	flex-flow: column nowrap;
 }
 .hidden {
   visibility: hidden;
+}
+.icon-button {
+  height: 100%;
+  border: none;
+  background: none;
+  overflow: hidden;
+  padding-inline: 0;
+  position: absolute;
+  color: var(--text-secondary);
+}
+svg {
+  opacity: 0.3;
+  stroke: none;
+  fill: var(--text-main);
+}
+#left {
+  top: 0;
+  left: 0;
+  width: 12vmax;
+}
+#right {
+  top: 0;
+  right: 0;
+  width: 12vmax;
+}
+#close {
+  top: 4vmax;
+  left: calc(52vw - 6vmax - 2vmin);
+  width: 12vmax;
+  height: 12vmax;
+  margin: 0 auto;
 }
 .modal-container {
   top: 0;
@@ -126,12 +157,19 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .modal-container {
-    padding: 4vmax 12vmax;
+    padding: 12vmax;
   }
   .image-description-container {
     display: flex;
     max-height: 100%;
     flex-flow: row nowrap;
+  }
+  #close {
+    top: 1vmax;
+    left: calc(52vw - 6vmax - 2vmin);
+    width: 12vmax;
+    height: 12vmax;
+    margin: 0 auto;
   }
 }
 @media (prefers-color-scheme: light) {

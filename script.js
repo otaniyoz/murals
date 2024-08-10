@@ -26,8 +26,7 @@ window.onload = () => {
 
   function hideModal(event) {
     // close modal when user clicked only on it and not on its children
-    if ((event.type === 'pointerdown' && event.target === this) || event.type === 'keyup') {
-      // document.getElementById('modal').remove();
+    if ((event.type === 'pointerdown' && event.target === this) || event.type === 'keyup' || this.id === 'close') {
       document.getElementById('modal').classList.add('hidden');
       document.removeEventListener('keypress', handleKeyPress);
       document.children[0].children[1].style.overflowY = 'scroll';
@@ -44,16 +43,34 @@ window.onload = () => {
     const imageDescriptionContainer = document.createElement('div');
     const image = document.createElement('img');
     const imageDescription = document.createElement('p');
+    const rightButton = document.createElement('button');
+    const leftButton = document.createElement('button');
+    const closeButton = document.createElement('button');
     modal.id = 'modal';
+    rightButton.id = 'right';
+    leftButton.id = 'left';
+    closeButton.id = 'close';
     modal.classList.add('modal-container');
     imageDescriptionContainer.classList.add('image-description-container');
     imageDescriptionContainer.appendChild(image);
     imageDescriptionContainer.appendChild(imageDescription);
     modal.classList.add('hidden');
+    rightButton.innerHTML = '<svg viewBox="0 0 32 32"><polygon points="18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6"/></svg>'; 
+    leftButton.innerHTML = '<svg viewBox="0 0 32 32"><polygon points="14 26 15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26"/></svg>'; 
+    closeButton.innerHTML = '<svg viewBox="0 0 32 32"><polygon points="17.4141 16 26 7.4141 24.5859 6 16 14.5859 7.4143 6 6 7.4141 14.5859 16 6 24.5859 7.4143 26 16 17.4141 24.5859 26 26 24.5859 17.4141 16"/></svg>'; 
+    rightButton.classList.add('icon-button');
+    leftButton.classList.add('icon-button');
+    closeButton.classList.add('icon-button');
     modal.appendChild(imageDescriptionContainer);
+    modal.appendChild(leftButton);
+    modal.appendChild(rightButton);
+    modal.appendChild(closeButton);
     document.children[0].children[1].appendChild(modal);
     document.children[0].children[1].style.overflowY = 'hidden';
     modal.addEventListener('pointerdown', hideModal);
+    closeButton.addEventListener('pointerdown', hideModal);
+    rightButton.addEventListener('pointerdown', nextImage);
+    leftButton.addEventListener('pointerdown', nextImage);
     document.addEventListener('keyup', handleKeyPress);
   }
 
@@ -75,11 +92,11 @@ window.onload = () => {
     while (i < imageFileNames.length && !found) {
       i++;
       if (imageFileNames[i] === imageDescriptionContainer[0].dataset.src) {
-        if (event.key === 'ArrowRight') {
+        if (event.type === 'pointerdown' || event.key === 'ArrowRight') {
           i = (i + 1) % imageFileNames.length; 
           found = true;         
         }
-        else if (event.key === 'ArrowLeft') {
+        else if (event.type === 'pointerdown' || event.key === 'ArrowLeft') {
           i = i - 1;
           if (i < 0) i = imageFileNames.length - 1;
           found = true;

@@ -103,12 +103,14 @@ img {
   visibility: hidden;
 }
 .icon-button {
-  height: 100%;
   border: none;
+  height: 90vw;
+  width: 12vmax;
   background: none;
   overflow: hidden;
   padding-inline: 0;
   position: absolute;
+  top: calc(50vh - 49vw);
   color: var(--text-secondary);
 }
 svg {
@@ -119,18 +121,13 @@ svg {
   fill: var(--text-main);
 }
 #left {
-  top: 0;
   left: 0;
-  width: 12vmax;
 }
 #right {
-  top: 0;
   right: 0;
-  width: 12vmax;
 }
 #close {
   top: 4vmin;
-  width: 12vmax;
   height: 12vmax;
   left: calc(52vw - 6vmax - 2vmin);
 }
@@ -142,7 +139,7 @@ svg {
   height: 100%;
   display: flex;
   position: fixed;
-  padding: 0 2vmin; 
+  padding: 0 2vmin;
   max-height: 100%;
   overflow: hidden;
   transition: 0.75s;
@@ -169,7 +166,12 @@ svg {
     max-height: 100%;
     flex-flow: row nowrap;
   }
+  .icon-button {
+    top: 0;
+    height: 100%;
+  }
   #close {
+    top: 4vmin;
     width: 4vmax;
     height: 4vmax;
     left: calc(52vw - 4vmax - 2vmin);

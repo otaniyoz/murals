@@ -18,7 +18,8 @@
   color-scheme: light dark;
   
   --text-main: #f8f8f2;
-  --text-accent: rgb(255, 69, 0);
+  --text-accent-main: #ffff00;
+  --text-accent-secondary: #000cff;
   --text-secondary: #888888;
   --background-main: #111111; 
   --background-secondary: #494949;
@@ -55,8 +56,10 @@ h1 {
   width: fit-content;
   white-space: nowrap;
   transform: rotate(-5deg);
-  color: var(--text-accent);
+  color: var(--text-accent-main);
   font-family: "Sedgwick Ave Display";
+  -webkit-text-stroke: 0.6vmin var(--text-accent-secondary);
+  text-shadow: -0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), -0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary);
 }
 body {
   width: 100%;
@@ -82,7 +85,7 @@ a {
 }
 a:hover {
   transition: 0s;
-  text-decoration-color: var(--text-accent);
+  text-decoration-color: var(--text-accent-main);
 }
 img {
   max-height: 100%;
@@ -180,8 +183,6 @@ svg {
 @media (prefers-color-scheme: light) {
   :root {
     --text-main: #111111;
-    --text-accent: rgb(255, 69, 0);
     --background-main: #f8f8f2; 
-    --background-secondary: #494949;
   }
 }

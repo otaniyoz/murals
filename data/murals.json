@@ -77,7 +77,7 @@
         ],
         "year": 0,
         "author": "Neon shaman", 
-        "location": "59 Abylai Khan avenue, Almaty"
+        "location": "59 Abylai khan avenue, Almaty"
       },
       {
         "filename": "101_panfilov_almaty-kazakhstan-0",
@@ -100,6 +100,94 @@
         "year": 0,
         "author": "Unknown", 
         "location": "101 Panfilov street, Almaty"
+      },
+      {
+        "filename": "97_shevchenko_almaty-kazakhstan-0",
+        "alt": "Unknown",
+        "title": "Unknown",
+        "category": [
+          "People", "Animals", "Vehicles"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "97 Shevchenko street, Almaty"
+      },
+      {
+        "filename": "125_tolebi_almaty-kazakhstan-0",
+        "alt": "Unknown",
+        "title": "Unknown",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "125 Tole bi street, Almaty"
+      },
+      {
+        "filename": "125_tolebi_almaty-kazakhstan-1",
+        "alt": "Unknown",
+        "title": "Unknown",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "125 Tole bi street, Almaty"
+      },
+      {
+        "filename": "153_gogol_almaty-kazakhstan-0",
+        "alt": "Baitusynov",
+        "title": "Baitusynov",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "153 Gogol street, Almaty"
+      },
+      {
+        "filename": "186_makataev_almaty-kazakhstan-0",
+        "alt": "Makataev",
+        "title": "Makataev",
+        "category": [
+          "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "186 Makataev street, Almaty"
+      },
+      {
+        "filename": "118_nazarbayev_almaty-kazakhstan-0",
+        "alt": "Unknown",
+        "title": "Unknown",
+        "category": [
+          "Animals", "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "118 Nazarbayev avenue, Almaty"
+      },
+      {
+        "filename": "145_nazarbayev_almaty-kazakhstan-0",
+        "alt": "Qarlygash",
+        "title": "Qarlygash",
+        "category": [
+          "Animals"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "145 Nazarbayev avenue, Almaty"
+      },
+      {
+        "filename": "202_kozhamkulov_almaty-kazakhstan-0",
+        "alt": "Unknown",
+        "title": "Unknown",
+        "category": [
+          "Animals", "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "202 Kozhamkulov street, Almaty"
       }
     ]
   }

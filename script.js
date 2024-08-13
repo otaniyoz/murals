@@ -32,34 +32,15 @@ window.onload = () => {
   }
 
   function initModal() {
-    const modal = document.createElement('div');
+    const modal = document.getElementById('modal');
     const image = document.createElement('img');  
     const imageDescription = document.createElement('p');
-    const rightButton = document.createElement('button');
-    const leftButton = document.createElement('button');
-    const closeButton = document.createElement('button');
-    const imageDescriptionContainer = document.createElement('div');
-    modal.id = 'modal';
-    rightButton.id = 'right';
-    leftButton.id = 'left';
-    closeButton.id = 'close';
-    modal.classList.add('modal-container');
-    imageDescriptionContainer.classList.add('image-description-container');
+    const rightButton = document.getElementById('right');
+    const leftButton = document.getElementById('left');
+    const closeButton = document.getElementById('close');
+    const imageDescriptionContainer = modal.children[0];
     imageDescriptionContainer.appendChild(image);
     imageDescriptionContainer.appendChild(imageDescription);
-    modal.classList.add('hidden');
-    rightButton.innerHTML = '<svg viewBox="0 0 32 32"><polygon points="18 6 16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6"/></svg>'; 
-    leftButton.innerHTML = '<svg viewBox="0 0 32 32"><polygon points="14 26 15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26"/></svg>'; 
-    closeButton.innerHTML = '<svg viewBox="0 0 32 32"><polygon points="17.4141 16 26 7.4141 24.5859 6 16 14.5859 7.4143 6 6 7.4141 14.5859 16 6 24.5859 7.4143 26 16 17.4141 24.5859 26 26 24.5859 17.4141 16"/></svg>'; 
-    rightButton.classList.add('icon-button');
-    leftButton.classList.add('icon-button');
-    closeButton.classList.add('icon-button');
-    modal.appendChild(imageDescriptionContainer);
-    modal.appendChild(leftButton);
-    modal.appendChild(rightButton);
-    modal.appendChild(closeButton);
-    document.children[0].children[1].appendChild(modal);
-    document.children[0].children[1].style.overflowY = 'hidden';
     modal.addEventListener('pointerdown', hideModal);
     closeButton.addEventListener('pointerdown', hideModal);
     rightButton.addEventListener('pointerdown', nextImage);

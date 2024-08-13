@@ -18,8 +18,8 @@
   color-scheme: light dark;
   
   --text-main: #f8f8f2;
-  --text-accent-main: #ffff00;
-  --text-accent-secondary: #000cff;
+  --text-accent-main: #041142;
+  --text-accent-secondary: #0172C3;
   --text-secondary: #888888;
   --background-main: #111111; 
   --background-secondary: #494949;
@@ -85,7 +85,7 @@ a {
 }
 a:hover {
   transition: 0s;
-  text-decoration-color: var(--text-accent-main);
+  text-decoration-color: var(--text-accent-secondary);
 }
 img {
   max-height: 100%;

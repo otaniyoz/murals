@@ -88,10 +88,12 @@ a:hover {
   text-decoration-color: var(--text-accent-main);
 }
 img {
-  flex: 2 2 50%;
   max-height: 100%;
-  object-fit: cover;
   background: var(--background-secondary);
+}
+.image-description-container > img {
+  flex: 2 2 50%;
+  object-fit: cover;
 }
 .row {
 	gap: 2vmax;

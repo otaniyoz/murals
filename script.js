@@ -105,6 +105,7 @@ window.onload = () => {
           data[key].images.forEach((image, i) => {
             const col = document.getElementById(`col-${i % columns}`);
             const img = document.createElement('img');
+            img.src = '#';
             img.alt = image.alt;
             img.id = image.filename;
             imageFileNames.push(image.filename);

@@ -115,8 +115,8 @@ window.onload = () => {
             img.setAttribute('data-author', image.author);
             img.setAttribute('data-location', image.location);
             img.setAttribute('data-category', image.category);
-            col.appendChild(img);
             img.addEventListener('click', showModal);
+            col.appendChild(img);
             imageCount++;
           });
         }
@@ -140,9 +140,9 @@ window.onload = () => {
     timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
   }
 
-  let timeoutId = null;
   let prevVW = 0;
   let columns = 1;
+  let timeoutId = null;
   const imageFileNames = [];
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
   const muralsContainer = document.getElementById('murals-container');

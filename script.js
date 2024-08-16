@@ -22,7 +22,7 @@ window.onload = () => {
     if ((event.type === 'pointerdown' && event.target === this) || event.type === 'keyup' || this.id === 'close') {
       document.getElementById('modal').classList.add('hidden');
       document.removeEventListener('keypress', handleKeyPress);
-      document.children[0].children[1].style.overflowY = 'visible';
+      document.children[0].style.overflowY = 'scroll';
     }
   }
 
@@ -55,6 +55,7 @@ window.onload = () => {
     imageDescriptionContainer[0].src = `images/${image.id}.jpg`;
     imageDescriptionContainer[0].setAttribute('data-src', image.id);
     imageDescriptionContainer[1].textContent = `‘${image.dataset['title']}’ by ${image.dataset['author']}. ${image.dataset['location']}, ${image.dataset['country']}`;
+    document.children[0].style.overflowY = 'hidden';
     modal.classList.remove('hidden');
   }
 

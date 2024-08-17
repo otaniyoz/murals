@@ -70,6 +70,9 @@ window.onload = () => {
       document.addEventListener('pointermove', scrollCurtain);
       document.addEventListener('pointerup', () => {
         document.removeEventListener('pointermove', scrollCurtain);
+        // resetting image description height on pointerup so that it does not persist across images and stuff
+        imageDescriptionContainer[1].style.height = `${0.2*window.innerHeight}px`;
+        
       });
     });
     modal.classList.remove('hidden');

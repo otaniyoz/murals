@@ -43,23 +43,28 @@ header {
   padding: 1vmin 0 4vmax 0;
 }
 nav {
+  z-index: 12;
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
   padding-bottom: 1vmax;
 }
 h1 {
   z-index: -12;
   display: block;
-  padding: 0 1vw;
   font-weight: 400;
   overflow: visible;
   margin-left: -1vw;
   line-height: 0.9em;
   width: fit-content;
+  position: relative;
   white-space: nowrap;
   transform: rotate(-5deg);
+  padding: 1.5vmax 1vw 1vmax 1vw;
   color: var(--text-accent-main);
   font-family: "Sedgwick Ave Display";
-  -webkit-text-stroke: 0.6vmin var(--text-accent-secondary);
-  text-shadow: -0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), -0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary);
+  /*-webkit-text-stroke: 0.6vmin var(--text-accent-secondary);
+  text-shadow: -0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), -0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary);*/
 }
 body {
   width: 100%;
@@ -79,8 +84,8 @@ a {
   color: inherit;
   transition: 0.75s;
   text-underline-offset: 10%;
-  text-decoration-thickness: 0.5px;
-  text-decoration-color: var(--text-main);
+  text-decoration-thickness: 0.25px;
+  text-decoration-color: var(--text-secondary);
 }
 a:hover {
   transition: 0s;
@@ -89,6 +94,36 @@ a:hover {
 img {
   max-height: 100%;
   background: var(--background-secondary);
+}
+label {
+  font-size: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
+  background: var(--background-main);
+  border: 0.25px solid var(--text-secondary);
+  font-family: "IBM Plex Sans";
+  border-radius: 16vmax;
+  padding: 1vmin 2vmax;
+  margin: 1vmin 0.5vmin;
+  transition: 0.75s;
+  font-weight: 700;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked+label {
+  transition: 0s;
+  background: var(--text-accent-secondary);
+  border-color: var(--text-accent-secondary);
+}
+label:hover {
+  transition: 0s;
+  border-color: var(--text-accent-secondary);
+}
+svg {
+  width: 4vh;
+  height: 4vh;
+  opacity: 0.3;
+  stroke: none;
+  fill: var(--text-main);
 }
 .row {
 	gap: 2vmax;
@@ -114,13 +149,6 @@ img {
   position: absolute;
   top: calc(50vh - 49vw);
   color: var(--text-secondary);
-}
-svg {
-  width: 4vh;
-  height: 4vh;
-  opacity: 0.3;
-  stroke: none;
-  fill: var(--text-main);
 }
 #left {
   left: 0;

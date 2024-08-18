@@ -29,7 +29,7 @@
         "alt": "Bukreyev",
         "title": "Bukreyev",
         "category": [
-          "People"
+          "People", "Athletes"
         ],
         "year": 0,
         "author": "Unknown", 
@@ -73,7 +73,7 @@
         "alt": "",
         "title": "Barys 2.0",
         "category": [
-          "Animals", "Cars"
+          "Animals", "Vehicles"
         ],
         "year": 0,
         "author": "Neon shaman", 
@@ -84,7 +84,7 @@
         "alt": "Batyr",
         "title": "Batyr",
         "category": [
-          "People", "Artists"
+          "People", "Artists", "Writers"
         ],
         "year": 0,
         "author": "Unknown", 
@@ -95,7 +95,7 @@
         "alt": "Batyr",
         "title": "Batyr",
         "category": [
-          "People", "Artists"
+          "People", "Artists", "Writers"
         ],
         "year": 0,
         "author": "Unknown", 
@@ -139,7 +139,7 @@
         "alt": "Baitursynov",
         "title": "Baitursynov",
         "category": [
-          "People"
+          "People", "Writers"
         ],
         "year": 0,
         "author": "Unknown", 
@@ -150,7 +150,7 @@
         "alt": "Makataev",
         "title": "Makataev",
         "category": [
-          "People"
+          "People", "Writers"
         ],
         "year": 0,
         "author": "Unknown", 
@@ -161,7 +161,7 @@
         "alt": "Unknown",
         "title": "Unknown",
         "category": [
-          "Animals", "People"
+          "Animals", "People", "Mythical"
         ],
         "year": 0,
         "author": "Unknown", 
@@ -188,6 +188,35 @@
         "year": 0,
         "author": "Unknown", 
         "location": "202 Kozhamkulov street, Almaty"
+      },
+      {
+        "filename": "122_valikhanov_almaty-kazakhstan-0",
+        "alt": "The children are painting the world",
+        "title": "The children are painting the world",
+        "category": [
+          "Animals", "People"
+        ],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "122 Valikhanov street, Almaty"
+      },
+      {
+        "filename": "127_pushkin_almaty-kazakhstan-0",
+        "alt": "QZ",
+        "title": "QZ",
+        "category": [],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "127 Pushkin street, Almaty"
+      },
+      {
+        "filename": "88_pushkin_almaty-kazakhstan-0",
+        "alt": "Future is my choice",
+        "title": "Future is my choice",
+        "category": [],
+        "year": 0,
+        "author": "Unknown", 
+        "location": "88 Pushkin street, Almaty"
       }
     ]
   }

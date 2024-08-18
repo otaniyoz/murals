@@ -72,7 +72,6 @@ window.onload = () => {
         document.removeEventListener('pointermove', scrollCurtain);
         // resetting image description height on pointerup so that it does not persist across images and stuff
         imageDescriptionContainer[1].style.height = `${0.2*window.innerHeight}px`;
-        
       });
     });
     modal.classList.remove('hidden');
@@ -88,7 +87,7 @@ window.onload = () => {
       if (imageFileNames[i] === imageDescriptionContainer[0].dataset.src) {
         if ((event.type === 'pointerdown' && event.target.getBoundingClientRect().x > window.innerWidth / 2) || event.key === 'ArrowRight') {
           i = (i + 1) % imageFileNames.length; 
-          found = true;         
+          found = true; 
         }
         else if ((event.type === 'pointerdown' && event.target.getBoundingClientRect().x < window.innerWidth / 2) || event.key === 'ArrowLeft') {
           i = i - 1;
@@ -111,40 +110,72 @@ window.onload = () => {
       if (w >= bp[0] && w <= bp[1]) columns = i + 1;
     });
     const children = muralsContainer.children;
+    const navBar = document.getElementById('nav-bar');
+    const categoryInputs = document.getElementsByTagName('input');
+    for (let i = 0; i < categoryInputs.length; i++) {
+      if (categoryInputs[i].checked) checkedCategories.push(categoryInputs[i].value);
+      else checkedCategories = checkedCategories.filter(cat => cat !== categoryInputs[i].value);  
+    }
+    imageFileNames = [];
     fetch(`data/murals.json`).then(response => response.json()).then(data => {
       while (children.length) children[0].remove();
-
       for (let i = 0; i < columns; i++) {
         const col = document.createElement('div');
         col.classList.add('col');
         col.id = `col-${i}`
         muralsContainer.appendChild(col);
       }
-
       for (let key in data) {
         if (data.hasOwnProperty(key)) {
           data[key].images.forEach((image, i) => {
-            const col = document.getElementById(`col-${i % columns}`);
+            const col = document.getElementById(`col-${imageCount % columns}`);
             const img = document.createElement('img');
             img.src = '#';
             img.alt = image.alt;
             img.id = image.filename;
-            imageFileNames.push(image.filename);
             img.setAttribute('data-country', data[key].title);
             img.setAttribute('data-year', image.year);
             img.setAttribute('data-title', image.title);
             img.setAttribute('data-author', image.author);
             img.setAttribute('data-location', image.location);
             img.setAttribute('data-category', image.category);
-            img.addEventListener('click', showModal);
-            col.appendChild(img);
-            imageCount++;
+            for (let category of image.category) {
+              if (categories.indexOf(category) === -1) {
+                let selectorLabel = document.createElement('label');
+                let selector = document.createElement('input');
+                selector.id = category;
+                selector.value = category;
+                selector.type = 'checkbox';
+                selectorLabel.htmlFor = category;
+                selectorLabel.textContent = category;
+                selector.addEventListener('change', filterImages);
+                categories.push(category);
+                navBar.appendChild(selector);
+                navBar.appendChild(selectorLabel);
+              }
+            }  
+            if (!checkedCategories.length || image.category.some(cat => checkedCategories.includes(cat))) {
+              imageFileNames.push(image.filename);
+              img.addEventListener('click', showModal);
+              col.appendChild(img);
+              imageCount++;
+            }
           });
         }
       }
-      counter.textContent = `${imageCount}`;
-      document.title = title.textContent;
+      if (!counter.textContent) {
+        counter.textContent = `${imageCount}`;
+        document.title = title.textContent;  
+      } 
     }).catch(error => console.error('Error fetching JSON:', error));
+  }
+
+  function filterImages(event) {
+    const category = event.target.value;
+    if (event.target.checked) checkedCategories.push(category);
+    else checkedCategories = checkedCategories.filter(cat => cat !== category);
+    buildGallery();
+    timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);    
   }
 
   function resizePage() {
@@ -159,7 +190,6 @@ window.onload = () => {
       prevVW = vw;
     }
     timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
-
     const imageDescriptionContainer = document.getElementById('modal').children[0].children;
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;;
   }
@@ -168,7 +198,9 @@ window.onload = () => {
   let columns = 1;
   let timeoutId = null;
   let curtainYOffset = 0;
-  const imageFileNames = [];
+  const categories = [];
+  let imageFileNames = [];
+  let checkedCategories = [];
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
   const muralsContainer = document.getElementById('murals-container');
   const title = document.getElementById('title');

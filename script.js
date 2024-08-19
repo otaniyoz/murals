@@ -57,12 +57,28 @@ window.onload = () => {
   }
 
   function showModal(event) {
+    const image = event.target;
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const vmin = (w > h) ? h / 100 : w / 100;
+    const vmax = (w > h) ? w / 100 : h / 100;
     const modal = document.getElementById('modal');
     const imageDescriptionContainer = modal.children[0].children;
-    const image = event.target;
+    const paddedWindowWidth = (w <= breakPoints[2][0]) ? w - 4*vmin : w - 24*vmax;
     imageDescriptionContainer[0].src = `images/${image.id}.jpg`;
     imageDescriptionContainer[0].setAttribute('data-src', image.id);
-    imageDescriptionContainer[1].textContent = `‘${image.dataset['title']}’ by ${image.dataset['author']}. ${image.dataset['location']}, ${image.dataset['country']}`;
+    imageDescriptionContainer[0].setAttribute('data-ratio', image.dataset.ratio);
+    console.log(image.dataset.ratio, h / paddedWindowWidth)
+    if (image.dataset.ratio < h / paddedWindowWidth) {
+      imageDescriptionContainer[0].style.width = `${paddedWindowWidth}px`;
+      imageDescriptionContainer[0].style.height = `${image.dataset.ratio*paddedWindowWidth}px`;
+    }
+    else {
+      imageDescriptionContainer[0].style.height = `${h}px`;
+      imageDescriptionContainer[0].style.width = `${h/image.dataset.ratio}px`;
+    }
+    console.log(imageDescriptionContainer[0].style.height, imageDescriptionContainer[0].style.width)
+    imageDescriptionContainer[1].textContent = `‘${image.dataset.title}’${(image.dataset.year !== '0') ? ', ' + image.dataset.year : ''} by ${image.dataset.author}. ${image.dataset.location}, ${image.dataset.country}`;
     document.children[0].style.overflowY = 'hidden';
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
     imageDescriptionContainer[1].addEventListener('pointerdown', (event) => {
@@ -80,8 +96,13 @@ window.onload = () => {
   function nextImage(event) {
     let i = -1;
     let found = false;
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const vmin = (w > h) ? h / 100 : w / 100;
+    const vmax = (w > h) ? w / 100 : h / 100;
     const modal = document.getElementById('modal');
     const imageDescriptionContainer = modal.children[0].children;
+    const paddedWindowWidth = (w <= breakPoints[2][0]) ? w - 4*vmin : w - 24*vmax;
     while (i < imageFileNames.length && !found) {
       i++;
       if (imageFileNames[i] === imageDescriptionContainer[0].dataset.src) {
@@ -95,17 +116,29 @@ window.onload = () => {
           found = true;
         }
       }
-    };
+    }
     const newImage = document.getElementById(imageFileNames[i]);
     imageDescriptionContainer[0].src = `images/${newImage.id}.jpg`;
     imageDescriptionContainer[0].setAttribute('data-src', newImage.id);
-    imageDescriptionContainer[1].textContent = `‘${newImage.dataset['title']}’ by ${newImage.dataset['author']}. ${newImage.dataset['location']}, ${newImage.dataset['country']}`;
+    imageDescriptionContainer[0].setAttribute('data-ratio', newImage.dataset.ratio);
+    if (newImage.dataset.ratio < h / paddedWindowWidth) {
+      imageDescriptionContainer[0].style.width = `${paddedWindowWidth}px`;
+      imageDescriptionContainer[0].style.height = `${newImage.dataset.ratio*paddedWindowWidth}px`;
+    }
+    else {
+      imageDescriptionContainer[0].style.height = `${h}px`;
+      imageDescriptionContainer[0].style.width = `${h/newImage.dataset.ratio}px`;
+    }
+    imageDescriptionContainer[1].textContent = `‘${newImage.dataset.title}’${(newImage.dataset.year !== '0') ? ', ' + newImage.dataset.year : ''} by ${newImage.dataset.author}. ${newImage.dataset.location}, ${newImage.dataset.country}`;
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
   }
 
   function buildGallery() {
     let imageCount = 0;
     const w = window.innerWidth;
+    const h = window.innerHeight;
+    const vmin = (w > h) ? h / 100 : w / 100;
+    const vmax = (w > h) ? w / 100 : h / 100;
     breakPoints.forEach((bp, i) => {
       if (w >= bp[0] && w <= bp[1]) columns = i + 1;
     });
@@ -131,11 +164,12 @@ window.onload = () => {
             const col = document.getElementById(`col-${imageCount % columns}`);
             const img = document.createElement('img');
             img.src = '#';
-            img.alt = image.alt;
+            img.alt = image.title;
             img.id = image.filename;
             img.setAttribute('data-country', data[key].title);
             img.setAttribute('data-year', image.year);
             img.setAttribute('data-title', image.title);
+            img.setAttribute('data-ratio', image.ratio);
             img.setAttribute('data-author', image.author);
             img.setAttribute('data-location', image.location);
             img.setAttribute('data-category', image.category);
@@ -156,8 +190,12 @@ window.onload = () => {
             }  
             if (!checkedCategories.length || image.category.some(cat => checkedCategories.includes(cat))) {
               imageFileNames.push(image.filename);
+              const imageWidth = (w - 4*vmin - (columns - 1)*2*vmax) / columns;
+              const imageHeight = parseFloat(image.ratio) * imageWidth; 
               img.addEventListener('click', showModal);
               col.appendChild(img);
+              img.style.width = `${imageWidth}px`;
+              img.style.height = `${imageHeight}px`;
               imageCount++;
             }
           });
@@ -179,19 +217,40 @@ window.onload = () => {
   }
 
   function resizePage() {
-    const vw = window.innerWidth;
-    const sizeChanged = (vw !== prevVW);
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const vmin = (w > h) ? h / 100 : w / 100;
+    const vmax = (w > h) ? w / 100 : h / 100;
+    const paddedWindowWidth = (w <= breakPoints[2][0]) ? w - 4*vmin : w - 24*vmax;
+    const sizeChanged = (w !== prevVW);
     let breakPointCrossed = false;
     breakPoints.forEach((bp, i) => {
-      if (vw >= bp[0] && vw <= bp[1] && i + 1 !== columns) breakPointCrossed = true;
+      if (w >= bp[0] && w <= bp[1] && i + 1 !== columns) breakPointCrossed = true;
     });
     if (sizeChanged && breakPointCrossed) {
       buildGallery();
-      prevVW = vw;
+      prevVW = w;
+    }
+    else {
+      const images = document.getElementsByTagName('img');
+      for (let image of images) {
+        const imageWidth = (w - 4*vmin - (columns - 1)*2*vmax) / columns;
+        const imageHeight = parseFloat(image.dataset.ratio) * imageWidth; 
+        image.style.width = `${imageWidth}px`;
+        image.style.height = `${imageHeight}px`;  
+      }
     }
     timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
     const imageDescriptionContainer = document.getElementById('modal').children[0].children;
-    imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;;
+    if (imageDescriptionContainer[0].dataset.ratio < h / paddedWindowWidth) {
+      imageDescriptionContainer[0].style.width = `${paddedWindowWidth}px`;
+      imageDescriptionContainer[0].style.height = `${imageDescriptionContainer[0].dataset.ratio*paddedWindowWidth}px`;
+    }
+    else {
+      imageDescriptionContainer[0].style.height = `${h}px`;
+      imageDescriptionContainer[0].style.width = `${paddedWindowWidth/imageDescriptionContainer[0].dataset.ratio}px`;
+    }
+    imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
   }
 
   let prevVW = 0;

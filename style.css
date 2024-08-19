@@ -203,7 +203,7 @@ svg {
     margin-top: 2vmax;
   }
   .modal-container {
-    padding: 4vw 12vw;
+    padding: 0 12vw;
   }
   .image-description-container {
     max-height: 100%;
@@ -218,7 +218,6 @@ svg {
     height: 100%;
   }
   #close {
-    top: 4vmin;
     width: 4vmax;
     height: 4vmax;
   }

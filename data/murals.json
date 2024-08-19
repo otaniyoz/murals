@@ -4,219 +4,228 @@
     "images": [
       {
         "filename": "38_kunayev_almaty-kazakhstan-0",
-        "alt": "Let's fear together",
         "title": "Let's fear together",
         "category": [
           "Animals"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33,
+        "author": "Pasha Kas", 
         "location": "38 Kunayev street, Almaty"
       },
       {
         "filename": "71_kabanbay_batyr_almaty-kazakhstan-0",
-        "alt": "Ana",
         "title": "Ana",
         "category": [
           "People"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1,
+        "author": "Unknown",
         "location": "71 Kabanbay batyr street, Almaty"
       },
       {
         "filename": "16_dostyk_almaty-kazakhstan-0",
-        "alt": "Bukreyev",
         "title": "Bukreyev",
         "category": [
           "People", "Athletes"
         ],
-        "year": 0,
-        "author": "Unknown", 
+        "year": 2019,
+        "ratio": 1,
+        "author": "Gafura Kairbekova",
         "location": "16 Dostyk avenue, Almaty"
       },
       {
         "filename": "31_kurmangazy_almaty-kazakhstan-0",
-        "alt": "Balam",
-        "title": "Balam",
+        "title": "The girl with petroglyphs",
         "category": [
           "People"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33, 
+        "author": "Alexander Blagyi",
         "location": "31 Kurmangazy street, Almaty"
       },
       {
         "filename": "31_kurmangazy_almaty-kazakhstan-1",
-        "alt": "Space",
         "title": "Space",
         "category": [
           "People", "Space"
         ],
         "year": 0,
-        "author": "Repas workshop", 
+        "ratio": 1.33, 
+        "author": "Repas workshop",
         "location": "31 Kurmangazy street, Almaty"
       },
       {
         "filename": "33_kurmangazy_almaty-kazakhstan-0",
-        "alt": "",
         "title": "Unknown",
         "category": [
           "People"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33,
+        "author": "Unknown",
         "location": "33 Kurmangazy street, Almaty"
       },
       {
         "filename": "59_abylaikhan_almaty-kazakhstan-0",
-        "alt": "",
         "title": "Barys 2.0",
         "category": [
           "Animals", "Vehicles"
         ],
-        "year": 0,
-        "author": "Neon shaman", 
+        "year": 2017,
+        "ratio": 1.33,
+        "author": "Neon shaman",
         "location": "59 Abylai khan avenue, Almaty"
       },
       {
         "filename": "101_panfilov_almaty-kazakhstan-0",
-        "alt": "Batyr",
         "title": "Batyr",
         "category": [
           "People", "Artists", "Writers"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 0.75,
+        "author": "Unknown",
         "location": "101 Panfilov street, Almaty"
       },
       {
         "filename": "101_panfilov_almaty-kazakhstan-1",
-        "alt": "Batyr",
         "title": "Batyr",
         "category": [
           "People", "Artists", "Writers"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 0.75,
+        "author": "Unknown",
         "location": "101 Panfilov street, Almaty"
       },
       {
         "filename": "97_shevchenko_almaty-kazakhstan-0",
-        "alt": "Unknown",
         "title": "Unknown",
         "category": [
           "People", "Animals", "Vehicles"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33,
+        "author": "Unknown",
         "location": "97 Shevchenko street, Almaty"
       },
       {
         "filename": "125_tolebi_almaty-kazakhstan-0",
-        "alt": "Unknown",
         "title": "Unknown",
         "category": [
           "People"
         ],
         "year": 0,
-        "author": "Repas workshop", 
+        "ratio": 1.33, 
+        "author": "Repas workshop",
         "location": "125 Tole bi street, Almaty"
       },
       {
         "filename": "125_tolebi_almaty-kazakhstan-1",
-        "alt": "Unknown",
         "title": "Unknown",
         "category": [
           "People"
         ],
         "year": 0,
-        "author": "Repas workshop", 
+        "ratio": 1.33,
+        "author": "Repas workshop",
         "location": "125 Tole bi street, Almaty"
       },
       {
         "filename": "153_gogol_almaty-kazakhstan-0",
-        "alt": "Baitursynov",
         "title": "Baitursynov",
         "category": [
           "People", "Writers"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33,
+        "author": "Unknown",
         "location": "153 Gogol street, Almaty"
       },
       {
         "filename": "186_makataev_almaty-kazakhstan-0",
-        "alt": "Makataev",
         "title": "Makataev",
         "category": [
           "People", "Writers"
         ],
-        "year": 0,
-        "author": "Unknown", 
+        "year": 2021,
+        "ratio": 1.33,
+        "author": "Nurbolat Amankul and Abai Sultan",
         "location": "186 Makataev street, Almaty"
       },
       {
         "filename": "118_nazarbayev_almaty-kazakhstan-0",
-        "alt": "Unknown",
-        "title": "Unknown",
+        "title": "Tengri",
         "category": [
           "Animals", "People", "Mythical"
         ],
-        "year": 0,
-        "author": "Unknown", 
+        "year": 2019,
+        "ratio": 1,
+        "author": "Nurbolat Amankul",
         "location": "118 Nazarbayev avenue, Almaty"
       },
       {
         "filename": "145_nazarbayev_almaty-kazakhstan-0",
-        "alt": "Qarlygash",
         "title": "Qarlygash",
         "category": [
           "Animals"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 0.75, 
+        "author": "Unknown",
         "location": "145 Nazarbayev avenue, Almaty"
       },
       {
         "filename": "202_kozhamkulov_almaty-kazakhstan-0",
-        "alt": "Unknown",
         "title": "Unknown",
         "category": [
           "Animals", "People"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33,
+        "author": "Unknown",
         "location": "202 Kozhamkulov street, Almaty"
       },
       {
         "filename": "122_valikhanov_almaty-kazakhstan-0",
-        "alt": "The children are painting the world",
         "title": "The children are painting the world",
         "category": [
           "Animals", "People"
         ],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1.33, 
+        "author": "Unknown",
         "location": "122 Valikhanov street, Almaty"
       },
       {
         "filename": "127_pushkin_almaty-kazakhstan-0",
-        "alt": "QZ",
         "title": "QZ",
         "category": [],
         "year": 0,
-        "author": "Unknown", 
+        "ratio": 1,
+        "author": "Unknown",
         "location": "127 Pushkin street, Almaty"
       },
       {
         "filename": "88_pushkin_almaty-kazakhstan-0",
-        "alt": "Future is my choice",
         "title": "Future is my choice",
         "category": [],
         "year": 0,
-        "author": "Unknown", 
+        "author": "Unknown",
+        "ratio": 0.75, 
         "location": "88 Pushkin street, Almaty"
+      },
+      {
+        "filename": "41_shevchenko_almaty-kazakhstan-0",
+        "title": "Tram route four",
+        "category": ["Vehicles"],
+        "year": 0,
+        "author": "Repas workshop",
+        "ratio": 0.56, 
+        "location": "41 Shevchenko street, Almaty"
       }
     ]
   }

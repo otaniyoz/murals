@@ -68,7 +68,6 @@ window.onload = () => {
     imageDescriptionContainer[0].src = `images/${image.id}.jpg`;
     imageDescriptionContainer[0].setAttribute('data-src', image.id);
     imageDescriptionContainer[0].setAttribute('data-ratio', image.dataset.ratio);
-    console.log(image.dataset.ratio, h / paddedWindowWidth)
     if (image.dataset.ratio < h / paddedWindowWidth) {
       imageDescriptionContainer[0].style.width = `${paddedWindowWidth}px`;
       imageDescriptionContainer[0].style.height = `${image.dataset.ratio*paddedWindowWidth}px`;
@@ -77,7 +76,6 @@ window.onload = () => {
       imageDescriptionContainer[0].style.height = `${h}px`;
       imageDescriptionContainer[0].style.width = `${h/image.dataset.ratio}px`;
     }
-    console.log(imageDescriptionContainer[0].style.height, imageDescriptionContainer[0].style.width)
     imageDescriptionContainer[1].textContent = `‘${image.dataset.title}’${(image.dataset.year !== '0') ? ', ' + image.dataset.year : ''} by ${image.dataset.author}. ${image.dataset.location}, ${image.dataset.country}`;
     document.children[0].style.overflowY = 'hidden';
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;

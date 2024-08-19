@@ -5,9 +5,7 @@
       {
         "filename": "38_kunayev_almaty-kazakhstan-0",
         "title": "Let's fear together",
-        "category": [
-          "Animals"
-        ],
+        "category": ["Animals"],
         "year": 0,
         "ratio": 1.33,
         "author": "Pasha Kas", 
@@ -16,9 +14,7 @@
       {
         "filename": "71_kabanbay_batyr_almaty-kazakhstan-0",
         "title": "Ana",
-        "category": [
-          "People"
-        ],
+        "category": ["People"],
         "year": 0,
         "ratio": 1,
         "author": "Unknown",
@@ -27,9 +23,7 @@
       {
         "filename": "16_dostyk_almaty-kazakhstan-0",
         "title": "Bukreyev",
-        "category": [
-          "People", "Athletes"
-        ],
+        "category": ["People", "Athletes"],
         "year": 2019,
         "ratio": 1,
         "author": "Gafura Kairbekova",
@@ -38,9 +32,7 @@
       {
         "filename": "31_kurmangazy_almaty-kazakhstan-0",
         "title": "The girl with petroglyphs",
-        "category": [
-          "People"
-        ],
+        "category": ["People"],
         "year": 0,
         "ratio": 1.33, 
         "author": "Alexander Blagyi",
@@ -49,9 +41,7 @@
       {
         "filename": "31_kurmangazy_almaty-kazakhstan-1",
         "title": "Space",
-        "category": [
-          "People", "Space"
-        ],
+        "category": ["People", "Space"],
         "year": 0,
         "ratio": 1.33, 
         "author": "Repas workshop",
@@ -59,11 +49,9 @@
       },
       {
         "filename": "33_kurmangazy_almaty-kazakhstan-0",
-        "title": "Unknown",
-        "category": [
-          "People"
-        ],
-        "year": 0,
+        "title": "The father of apples",
+        "category": ["People", "Fruits"],
+        "year": 2013,
         "ratio": 1.33,
         "author": "Unknown",
         "location": "33 Kurmangazy street, Almaty"
@@ -71,9 +59,7 @@
       {
         "filename": "59_abylaikhan_almaty-kazakhstan-0",
         "title": "Barys 2.0",
-        "category": [
-          "Animals", "Vehicles"
-        ],
+        "category": ["Animals", "Vehicles"],
         "year": 2017,
         "ratio": 1.33,
         "author": "Neon shaman",
@@ -82,9 +68,7 @@
       {
         "filename": "101_panfilov_almaty-kazakhstan-0",
         "title": "Batyr",
-        "category": [
-          "People", "Artists", "Writers"
-        ],
+        "category": ["People", "Artists", "Writers"],
         "year": 0,
         "ratio": 0.75,
         "author": "Unknown",
@@ -93,9 +77,7 @@
       {
         "filename": "101_panfilov_almaty-kazakhstan-1",
         "title": "Batyr",
-        "category": [
-          "People", "Artists", "Writers"
-        ],
+        "category": ["People", "Artists", "Writers"],
         "year": 0,
         "ratio": 0.75,
         "author": "Unknown",
@@ -104,9 +86,7 @@
       {
         "filename": "97_shevchenko_almaty-kazakhstan-0",
         "title": "Unknown",
-        "category": [
-          "People", "Animals", "Vehicles"
-        ],
+        "category": ["People", "Animals", "Vehicles"],
         "year": 0,
         "ratio": 1.33,
         "author": "Unknown",
@@ -115,9 +95,7 @@
       {
         "filename": "125_tolebi_almaty-kazakhstan-0",
         "title": "Unknown",
-        "category": [
-          "People"
-        ],
+        "category": ["People", "Athletes"],
         "year": 0,
         "ratio": 1.33, 
         "author": "Repas workshop",
@@ -126,9 +104,7 @@
       {
         "filename": "125_tolebi_almaty-kazakhstan-1",
         "title": "Unknown",
-        "category": [
-          "People"
-        ],
+        "category": ["People", "Space"],
         "year": 0,
         "ratio": 1.33,
         "author": "Repas workshop",
@@ -137,9 +113,7 @@
       {
         "filename": "153_gogol_almaty-kazakhstan-0",
         "title": "Baitursynov",
-        "category": [
-          "People", "Writers"
-        ],
+        "category": ["People", "Writers"],
         "year": 0,
         "ratio": 1.33,
         "author": "Unknown",
@@ -148,9 +122,7 @@
       {
         "filename": "186_makataev_almaty-kazakhstan-0",
         "title": "Makataev",
-        "category": [
-          "People", "Writers"
-        ],
+        "category": ["People", "Writers"],
         "year": 2021,
         "ratio": 1.33,
         "author": "Nurbolat Amankul and Abai Sultan",
@@ -159,9 +131,7 @@
       {
         "filename": "118_nazarbayev_almaty-kazakhstan-0",
         "title": "Tengri",
-        "category": [
-          "Animals", "People", "Mythical"
-        ],
+        "category": ["Animals", "People", "Mythical"],
         "year": 2019,
         "ratio": 1,
         "author": "Nurbolat Amankul",
@@ -170,9 +140,7 @@
       {
         "filename": "145_nazarbayev_almaty-kazakhstan-0",
         "title": "Qarlygash",
-        "category": [
-          "Animals"
-        ],
+        "category": ["Animals"],
         "year": 0,
         "ratio": 0.75, 
         "author": "Unknown",
@@ -181,9 +149,7 @@
       {
         "filename": "202_kozhamkulov_almaty-kazakhstan-0",
         "title": "Unknown",
-        "category": [
-          "Animals", "People"
-        ],
+        "category": ["Animals", "People"],
         "year": 0,
         "ratio": 1.33,
         "author": "Unknown",
@@ -192,9 +158,7 @@
       {
         "filename": "122_valikhanov_almaty-kazakhstan-0",
         "title": "The children are painting the world",
-        "category": [
-          "Animals", "People"
-        ],
+        "category": ["Animals", "People"],
         "year": 0,
         "ratio": 1.33, 
         "author": "Unknown",
@@ -223,9 +187,36 @@
         "title": "Tram route four",
         "category": ["Vehicles"],
         "year": 0,
-        "author": "Repas workshop",
         "ratio": 0.56, 
+        "author": "Repas workshop",
         "location": "41 Shevchenko street, Almaty"
+      },
+      {
+        "filename": "122_aimanov_almaty-kazakhstan-0",
+        "title": "My name is Kozha",
+        "category": ["People", "Films"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Unknown",
+        "location": "122 Aimanov street, Almaty"
+      },
+      {
+        "filename": "88_zheltoksan_almaty-kazakhstan-0",
+        "title": "Bride",
+        "category": ["People", "Animals"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Unknown",
+        "location": "88 Zheltoksan street, Almaty"
+      },
+      {
+        "filename": "53_makataev_almaty-kazakhstan-0",
+        "title": "E-salyq",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Unknown",
+        "location": "53 Makataev street, Almaty"
       }
     ]
   }

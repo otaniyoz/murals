@@ -173,17 +173,7 @@ window.onload = () => {
             img.setAttribute('data-category', image.category);
             for (let category of image.category) {
               if (categories.indexOf(category) === -1) {
-                let selectorLabel = document.createElement('label');
-                let selector = document.createElement('input');
-                selector.id = category;
-                selector.value = category;
-                selector.type = 'checkbox';
-                selectorLabel.htmlFor = category;
-                selectorLabel.textContent = category;
-                selector.addEventListener('change', filterImages);
                 categories.push(category);
-                navBar.appendChild(selector);
-                navBar.appendChild(selectorLabel);
               }
             }
             if (!checkedCategories.length || image.category.some(cat => checkedCategories.includes(cat))) {
@@ -199,6 +189,23 @@ window.onload = () => {
           });
         }
       }
+
+      if (navBar.children.length !== 2*categories.length) {
+        categories.sort();
+        categories.forEach((category) => {
+          let selectorLabel = document.createElement('label');
+          let selector = document.createElement('input');
+          selector.id = category;
+          selector.value = category;
+          selector.type = 'checkbox';
+          selectorLabel.htmlFor = category;
+          selectorLabel.textContent = category;
+          selector.addEventListener('change', filterImages);
+          navBar.appendChild(selector);
+          navBar.appendChild(selectorLabel);
+        })  
+      }
+      
       if (!counter.textContent) {
         counter.textContent = `${imageCount}`;
         document.title = title.textContent;  

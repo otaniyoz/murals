@@ -15,9 +15,9 @@
         "filename": "71_kabanbay_batyr_almaty-kazakhstan-0",
         "title": "Ana",
         "category": ["People"],
-        "year": 0,
+        "year": 2022,
         "ratio": 1,
-        "author": "Unknown",
+        "author": "Rauan Nusup and Zhumadil Yelyukenev",
         "location": "71 Kabanbay batyr street, Almaty"
       },
       {
@@ -244,7 +244,17 @@
         "ratio": 1, 
         "author": "Saule Suleimenova and Kuanysh Bazargaliev",
         "location": "140 Kabanbay batyr street, Almaty"
+      },
+      {
+        "filename": "112_kurmangazy_almaty-kazakhstan-0",
+        "title": "Battle against the virus",
+        "category": ["People"],
+        "year": 2020,
+        "ratio": 1.33, 
+        "author": "Rauan Nusup and Zhumadil Yelyukenev",
+        "location": "112 Kurmangazy street, Almaty"
       }
+
     ]
   }
 }

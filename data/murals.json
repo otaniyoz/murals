@@ -32,7 +32,7 @@
       {
         "filename": "31_kurmangazy_almaty-kazakhstan-0",
         "title": "The girl with petroglyphs",
-        "category": ["People"],
+        "category": ["People", "Fruits"],
         "year": 0,
         "ratio": 1.33, 
         "author": "Alexander Blagyi",
@@ -148,7 +148,7 @@
       },
       {
         "filename": "202_kozhamkulov_almaty-kazakhstan-0",
-        "title": "Unknown",
+        "title": "Snow leopard",
         "category": ["Animals", "People"],
         "year": 0,
         "ratio": 1.33,
@@ -204,9 +204,9 @@
         "filename": "88_zheltoksan_almaty-kazakhstan-0",
         "title": "Bride",
         "category": ["People", "Animals"],
-        "year": 0,
+        "year": 2017,
         "ratio": 1.33, 
-        "author": "Unknown",
+        "author": "Mukhit Dulu",
         "location": "88 Zheltoksan street, Almaty"
       },
       {
@@ -217,6 +217,33 @@
         "ratio": 1.33, 
         "author": "Unknown",
         "location": "53 Makataev street, Almaty"
+      },
+      {
+        "filename": "55_kabanbay_batyr_almaty-kazakhstan-0",
+        "title": "Unknown",
+        "category": ["People", "Mythical"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Repas workshop",
+        "location": "55 Kabanbay batyr street, Almaty"
+      },
+      {
+        "filename": "140_kabanbay_batyr_almaty-kazakhstan-0",
+        "title": "Dimash",
+        "category": ["People", "Artists"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Unknown",
+        "location": "140 Kabanbay batyr street, Almaty"
+      },
+      {
+        "filename": "140_kabanbay_batyr_almaty-kazakhstan-1",
+        "title": "Anticipation",
+        "category": ["People"],
+        "year": 2019,
+        "ratio": 1, 
+        "author": "Saule Suleimenova and Kuanysh Bazargaliev",
+        "location": "140 Kabanbay batyr street, Almaty"
       }
     ]
   }

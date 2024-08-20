@@ -185,7 +185,7 @@ window.onload = () => {
                 navBar.appendChild(selector);
                 navBar.appendChild(selectorLabel);
               }
-            }  
+            }
             if (!checkedCategories.length || image.category.some(cat => checkedCategories.includes(cat))) {
               imageFileNames.push(image.filename);
               const imageWidth = (w - 4*vmin - (columns - 1)*2*vmax) / columns;

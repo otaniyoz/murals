@@ -55,12 +55,12 @@ h1 {
   font-weight: 400;
   overflow: visible;
   margin-left: -1vw;
-  line-height: 0.9em;
+  line-height: 0.8em;
   width: fit-content;
   position: relative;
   white-space: nowrap;
-  transform: rotate(-5deg);
-  padding: 1.5vmax 1vw 1vmax 1vw;
+/*  transform: rotate(-5deg);*/
+  padding: 3vmax 1vw 1vmin 1vw;
   color: var(--text-accent-main);
   font-family: "Sedgwick Ave Display";
   /*-webkit-text-stroke: 0.6vmin var(--text-accent-secondary);
@@ -199,7 +199,7 @@ svg {
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    transform: rotate(-2.5deg);
+/*    transform: rotate(-2.5deg);*/
     margin-top: 2vmax;
   }
   .modal-container {

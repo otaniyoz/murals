@@ -96,7 +96,7 @@
         "filename": "125_tolebi_almaty-kazakhstan-0",
         "title": "Unknown",
         "category": ["People", "Athletes"],
-        "year": 0,
+        "year": 2016,
         "ratio": 1.33, 
         "author": "Repas workshop",
         "location": "125 Tole bi street, Almaty"
@@ -253,8 +253,43 @@
         "ratio": 1.33, 
         "author": "Rauan Nusup and Zhumadil Yelyukenev",
         "location": "112 Kurmangazy street, Almaty"
+      },
+      {
+        "filename": "183_chokin_almaty-kazakhstan-0",
+        "title": "Battle against the virus",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Unknown",
+        "location": "183 Chokin street, Almaty"
+      },
+      {
+        "filename": "78_mametova_almaty-kazakhstan-0",
+        "title": "Space",
+        "category": ["Space"],
+        "year": 0,
+        "ratio": 1, 
+        "author": "Unknown",
+        "location": "78 Mametova street, Almaty"
+      },
+      {
+        "filename": "111_abay_almaty-kazakhstan-0",
+        "title": "Abay",
+        "category": ["People", "Writers"],
+        "year": 0,
+        "ratio": 1, 
+        "author": "Unknown",
+        "location": "111 Abay avenue, Almaty"
+      },
+      {
+        "filename": "38a_auezov_almaty-kazakhstan-0",
+        "title": "Dali",
+        "category": ["People", "Artists"],
+        "year": 2015,
+        "ratio": 1.33, 
+        "author": "Marina Zumi",
+        "location": "38a Auezov street, Almaty"
       }
-
     ]
   }
 }

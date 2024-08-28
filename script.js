@@ -274,20 +274,18 @@ window.onload = () => {
   }
 
   function changeLanguage() {
-    const hints = {
-      'title': {'en': ' ⁠murals', 'ru': ' ⁠мурала'},
-      'contribution': {'en': 'About', 'ru': 'О проекте'},
-      'murals': {'en': 'en.json', 'ru': 'ru.json'}
-    }
     const navBar = document.getElementById('nav-bar');
     radios.forEach((radio) => {
       if (radio.checked && radio.value !== lang) {
         lang = radio.value;
+        localStorage.setItem('murals-lang', lang);
         while (categories.length) categories.pop();
         while (checkedCategories.length) checkedCategories.pop();
         while (navBar.children.length) navBar.children[0].remove();
-        datafile = `data/${hints['murals'][lang]}`;
-        title.innerHTML = `<span id="counter">${counter.textContent}</span>${hints['title'][lang]}`;
+        datafile = `data/${lang}.json`;
+        counter.remove();
+        title.innerHTML = `<span id="counter"></span>${hints['title'][lang]}`;
+        counter = document.getElementById('counter');
         document.getElementById('contribution').textContent = hints['contribution'][lang];
         buildGallery();
         document.title = title.textContent;
@@ -304,13 +302,26 @@ window.onload = () => {
   let imageFileNames = [];
   const waitDuration = 450;
   let checkedCategories = [];
-  let datafile = 'data/en.json';
+  let datafile = `data/${lang}.json`;
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
   const muralsContainer = document.getElementById('murals-container');
-  const counter = document.getElementById('counter');
   const radios = document.getElementsByName('lang');
+  let counter = document.getElementById('counter');
   const title = document.getElementById('title');
+  const hints = {
+    'title': {'en': ' ⁠murals', 'ru': ' ⁠мурала'},
+    'contribution': {'en': 'About', 'ru': 'О проекте'}
+  }
   initModal();
+  if (localStorage.getItem('murals-lang') && localStorage.getItem('murals-lang') !== lang) {
+    lang = localStorage.getItem('murals-lang');
+    datafile = `data/${lang}.json`;
+    document.getElementById(lang).checked = true;
+    counter.remove();
+    title.innerHTML = `<span id="counter"></span>${hints['title'][lang]}`;
+    counter = document.getElementById('counter');
+    document.getElementById('contribution').textContent = hints['contribution'][lang];
+  }
   buildGallery();
 
   // sets up intersection observer to load images as they appear in the view

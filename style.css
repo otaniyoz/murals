@@ -59,11 +59,8 @@ h1 {
   position: relative;
   white-space: nowrap;
   font-family: "Kablammo";
-/*  transform: rotate(-5deg);*/
   padding: 3vmax 1vw 1vmin 1vw;
   color: var(--text-accent-main);
-  /*-webkit-text-stroke: 0.6vmin var(--text-accent-secondary);
-  text-shadow: -0.3vmax -0.3vmax 0 var(--text-accent-secondary), 0.3vmax -0.3vmax 0 var(--text-accent-secondary), -0.3vmax 0.3vmax 0 var(--text-accent-secondary), 0.3vmax 0.3vmax 0 var(--text-accent-secondary);*/
 }
 body {
   width: 100%;
@@ -83,7 +80,7 @@ a {
   width: 100%;
   color: inherit;
   transition: 0.5s;
-  text-underline-offset: 10%;
+  text-underline-offset: 0.195em;
   text-decoration-thickness: 0.25px;
   text-decoration-color: var(--text-secondary);
 }
@@ -100,10 +97,10 @@ label {
   border: 0.25px solid var(--text-secondary);
   background: var(--background-main);
   font-family: "IBM Plex Sans";
+  vertical-align: baseline;
+  padding: 1vmin 1.5vmax;
   border-radius: 16vmax;
-  padding: 1vmin 2vmax;
   margin: 1vmin 0.5vmin;
-  line-height: 1.5em;
   transition: 0.5s;
   font-weight: 700;
   min-height: 32px;
@@ -142,6 +139,8 @@ svg {
 .lang-wrapper > label {
   border: none;
   padding-right: 0;
+  font-weight: 400;
+  padding-left: 1vmax;
   font-size: clamp(1rem, 1vmin + 1rem, 4rem);
 }
 .lang-wrapper, 
@@ -224,7 +223,6 @@ svg {
 }
 @media screen and (min-width: 1024px) {
   h1 {
-/*    transform: rotate(-2.5deg);*/
     margin-top: 2vmax;
   }
   .modal-container {

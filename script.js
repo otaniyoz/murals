@@ -1,8 +1,6 @@
 'use strict';
 window.onload = () => {
   function fitTextToWidth(element) {
-    clearTimeout(timeoutId);
-    
     let iter = 0;
     const minSize = 16;
     const maxSize = 640;

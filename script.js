@@ -74,7 +74,8 @@ window.onload = () => {
       imageDescriptionContainer[0].style.height = `${h}px`;
       imageDescriptionContainer[0].style.width = `${h/image.dataset.ratio}px`;
     }
-    imageDescriptionContainer[1].textContent = `‘${image.dataset.title}’${(image.dataset.year !== '0') ? ', ' + image.dataset.year : ''} by ${image.dataset.author}. ${image.dataset.location}, ${image.dataset.country}`;
+    if (lang === 'en') imageDescriptionContainer[1].textContent = `‘${image.dataset.title}’${(image.dataset.year !== '0') ? ', ' + image.dataset.year : ''} by ${image.dataset.author}. ${image.dataset.location}, ${image.dataset.country}`;
+    else if (lang === 'ru') imageDescriptionContainer[1].textContent = `«${image.dataset.title}»${(image.dataset.year !== '0') ? ', ' + image.dataset.year : ''}. ${image.dataset.author}. ${image.dataset.location}, ${image.dataset.country}`;
     document.children[0].style.overflowY = 'hidden';
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
     imageDescriptionContainer[1].addEventListener('pointerdown', (event) => {
@@ -125,7 +126,8 @@ window.onload = () => {
       imageDescriptionContainer[0].style.height = `${h}px`;
       imageDescriptionContainer[0].style.width = `${h/newImage.dataset.ratio}px`;
     }
-    imageDescriptionContainer[1].textContent = `‘${newImage.dataset.title}’${(newImage.dataset.year !== '0') ? ', ' + newImage.dataset.year : ''} by ${newImage.dataset.author}. ${newImage.dataset.location}, ${newImage.dataset.country}`;
+    if (lang === 'en') imageDescriptionContainer[1].textContent = `‘${newImage.dataset.title}’${(newImage.dataset.year !== '0') ? ', ' + newImage.dataset.year : ''} by ${newImage.dataset.author}. ${newImage.dataset.location}, ${newImage.dataset.country}`;
+    else if (lang === 'ru') imageDescriptionContainer[1].textContent = `«${newImage.dataset.title}»${(newImage.dataset.year !== '0') ? ', ' + newImage.dataset.year : ''}. ${newImage.dataset.author}. ${newImage.dataset.location}, ${newImage.dataset.country}`;
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
   }
 
@@ -140,13 +142,13 @@ window.onload = () => {
     });
     const children = muralsContainer.children;
     const navBar = document.getElementById('nav-bar');
-    const categoryInputs = document.getElementsByTagName('input');
+    const categoryInputs = document.getElementsByName('category-selector');
     for (let i = 0; i < categoryInputs.length; i++) {
       if (categoryInputs[i].checked) checkedCategories.push(categoryInputs[i].value);
       else checkedCategories = checkedCategories.filter(cat => cat !== categoryInputs[i].value);  
     }
     imageFileNames = [];
-    fetch(`data/murals.json`).then(response => response.json()).then(data => {
+    fetch(datafile).then(response => response.json()).then(data => {
       while (children.length) children[0].remove();
       for (let i = 0; i < columns; i++) {
         const col = document.createElement('div');
@@ -197,6 +199,7 @@ window.onload = () => {
           selector.value = category;
           selector.type = 'checkbox';
           selectorLabel.htmlFor = category;
+          selector.name = 'category-selector';
           selectorLabel.textContent = category;
           selector.addEventListener('change', filterImages);
           navBar.appendChild(selector);
@@ -256,17 +259,43 @@ window.onload = () => {
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
   }
 
+  function changeLanguage() {
+    const hints = {
+      'title': {'en': ' ⁠murals', 'ru': ' ⁠мурала'},
+      'contribution': {'en': 'About', 'ru': 'О проекте'},
+      'murals': {'en': 'en.json', 'ru': 'ru.json'}
+    }
+    const navBar = document.getElementById('nav-bar');
+    radios.forEach((radio) => {
+      if (radio.checked && radio.value !== lang) {
+        lang = radio.value;
+        while (categories.length) categories.pop();
+        while (checkedCategories.length) checkedCategories.pop();
+        while (navBar.children.length) navBar.children[0].remove();
+        datafile = `data/${hints['murals'][lang]}`;
+        title.innerHTML = `<span id="counter">${counter.textContent}</span>${hints['title'][lang]}`;
+        document.getElementById('contribution').textContent = hints['contribution'][lang];
+        buildGallery();
+        document.title = title.textContent;
+        timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
+      }
+    });
+  }
+
   let prevVW = 0;
   let columns = 1;
+  let lang = 'en';
   let timeoutId = null;
   let curtainYOffset = 0;
   const categories = [];
   let imageFileNames = [];
   let checkedCategories = [];
+  let datafile = 'data/en.json';
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
   const muralsContainer = document.getElementById('murals-container');
-  const title = document.getElementById('title');
   const counter = document.getElementById('counter');
+  const radios = document.getElementsByName('lang');
+  const title = document.getElementById('title');
   initModal();
   buildGallery();
 
@@ -298,6 +327,9 @@ window.onload = () => {
   });
   mo.observe(muralsContainer, config);
   
+  radios.forEach((radio) => { 
+    radio.addEventListener('change', changeLanguage);
+  });
   window.addEventListener('resize', resizePage);
   timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
 };

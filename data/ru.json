@@ -1,0 +1,295 @@
+{
+  "kazakhstan": {
+    "title": "Казахстан",
+    "images": [
+      {
+        "filename": "38_kunayev_almaty-kazakhstan-0",
+        "title": "Давайте бояться вместе",
+        "category": ["Животные"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": "Паша Кас", 
+        "location": "Кунаева 38, Алматы"
+      },
+      {
+        "filename": "71_kabanbay_batyr_almaty-kazakhstan-0",
+        "title": "Мать",
+        "category": ["Люди"],
+        "year": 2022,
+        "ratio": 1,
+        "author": "Рауан Нусуп и Жумадиль Елюкенев",
+        "location": "Кабанбай батыра 71, Алматы"
+      },
+      {
+        "filename": "16_dostyk_almaty-kazakhstan-0",
+        "title": "Букреев",
+        "category": ["Люди", "Атлеты"],
+        "year": 2019,
+        "ratio": 1,
+        "author": "Гафура Каирбекова",
+        "location": "Проспект Достык 16, Алматы"
+      },
+      {
+        "filename": "31_kurmangazy_almaty-kazakhstan-0",
+        "title": "Девочка с петроглифами",
+        "category": ["Люди", "Фрукты"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Александр Благий",
+        "location": "Курмангазы 31, Алматы"
+      },
+      {
+        "filename": "31_kurmangazy_almaty-kazakhstan-1",
+        "title": "Космос",
+        "category": ["Люди", "Космос"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Репас",
+        "location": "Курмангазы 31, Алматы"
+      },
+      {
+        "filename": "33_kurmangazy_almaty-kazakhstan-0",
+        "title": "Отец яблок",
+        "category": ["Люди", "Фрукты"],
+        "year": 2013,
+        "ratio": 1.33,
+        "author": "Неизвестный",
+        "location": "Курмангазы 33, Алматы"
+      },
+      {
+        "filename": "59_abylaikhan_almaty-kazakhstan-0",
+        "title": "Барыс 2.0",
+        "category": ["Животные", "Транспорт"],
+        "year": 2017,
+        "ratio": 1.33,
+        "author": "Неоновый шаман",
+        "location": "Проспект Абылай хана 59, Алматы"
+      },
+      {
+        "filename": "101_panfilov_almaty-kazakhstan-0",
+        "title": "Батыр",
+        "category": ["Люди", "Артисты", "Писатели"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": "Неизвестный",
+        "location": "Панфилова 101, Алматы"
+      },
+      {
+        "filename": "101_panfilov_almaty-kazakhstan-1",
+        "title": "Батыра",
+        "category": ["Люди", "Артисты", "Писатели"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": "Неизвестный",
+        "location": "Панфилова 101, Алматы"
+      },
+      {
+        "filename": "97_shevchenko_almaty-kazakhstan-0",
+        "title": "Неизвестный",
+        "category": ["Люди", "Животные", "Транспорт"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": "Неизвестный",
+        "location": "Шевченко 97, Алматы"
+      },
+      {
+        "filename": "125_tolebi_almaty-kazakhstan-0",
+        "title": "Неизвестный",
+        "category": ["Люди", "Атлеты"],
+        "year": 2016,
+        "ratio": 1.33, 
+        "author": "Репас",
+        "location": "Толе би 125, Алматы"
+      },
+      {
+        "filename": "125_tolebi_almaty-kazakhstan-1",
+        "title": "Неизвестный",
+        "category": ["Люди", "Космос"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": "Репас",
+        "location": "Толе би 125, Алматы"
+      },
+      {
+        "filename": "153_gogol_almaty-kazakhstan-0",
+        "title": "Байтурсынов",
+        "category": ["Люди", "Писатели"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": "Неизвестный",
+        "location": "Гоголя 153, Алматы"
+      },
+      {
+        "filename": "186_makataev_almaty-kazakhstan-0",
+        "title": "Макатаев",
+        "category": ["Люди", "Писатели"],
+        "year": 2021,
+        "ratio": 1.33,
+        "author": "Нурболат Аманкуль и Абай Султан",
+        "location": "Макатаева 186, Алматы"
+      },
+      {
+        "filename": "118_nazarbayev_almaty-kazakhstan-0",
+        "title": "Тенгри",
+        "category": ["Животные", "Люди", "Мифическое"],
+        "year": 2019,
+        "ratio": 1,
+        "author": "Нурболат Аманкуль",
+        "location": "Проспект Назарбаева 118, Алматы"
+      },
+      {
+        "filename": "145_nazarbayev_almaty-kazakhstan-0",
+        "title": "Карлыгаш",
+        "category": ["Животные"],
+        "year": 0,
+        "ratio": 0.75, 
+        "author": "Неизвестный",
+        "location": "Проспект Назарбаева 145, Алматы"
+      },
+      {
+        "filename": "202_kozhamkulov_almaty-kazakhstan-0",
+        "title": "Снежный барс",
+        "category": ["Животные", "Люди"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": "Неизвестный",
+        "location": "Кожамкулова 202, Алматы"
+      },
+      {
+        "filename": "122_valikhanov_almaty-kazakhstan-0",
+        "title": "Дети рисуют мир",
+        "category": ["Животные", "Люди"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Неизвестный",
+        "location": "Валиханова 122, Алматы"
+      },
+      {
+        "filename": "127_pushkin_almaty-kazakhstan-0",
+        "title": "КЗ",
+        "category": [],
+        "year": 0,
+        "ratio": 1,
+        "author": "Неизвестный",
+        "location": "Пушкина 127, Алматы"
+      },
+      {
+        "filename": "88_pushkin_almaty-kazakhstan-0",
+        "title": "Будущее — мой выбор",
+        "category": [],
+        "year": 0,
+        "author": "Неизвестный",
+        "ratio": 0.75, 
+        "location": "Пушкина 88, Алматы"
+      },
+      {
+        "filename": "41_shevchenko_almaty-kazakhstan-0",
+        "title": "Четвёртый маршрут",
+        "category": ["Транспорт"],
+        "year": 0,
+        "ratio": 0.56, 
+        "author": "Репас",
+        "location": "Шевченко 41, Алматы"
+      },
+      {
+        "filename": "122_aimanov_almaty-kazakhstan-0",
+        "title": "Меня зовут Кожа",
+        "category": ["Люди", "Кино"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Неизвестный",
+        "location": "Айманова 122, Алматы"
+      },
+      {
+        "filename": "88_zheltoksan_almaty-kazakhstan-0",
+        "title": "Невеста",
+        "category": ["Люди", "Животные"],
+        "year": 2017,
+        "ratio": 1.33, 
+        "author": "Мухит Дулу",
+        "location": "Желтоксан 88, Алматы"
+      },
+      {
+        "filename": "53_makataev_almaty-kazakhstan-0",
+        "title": "Е-салык",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Неизвестный",
+        "location": "Макатаева 53, Алматы"
+      },
+      {
+        "filename": "55_kabanbay_batyr_almaty-kazakhstan-0",
+        "title": "Неизвестный",
+        "category": ["Люди", "Мифическое"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Репас",
+        "location": "Кабанбай батыра 55, Алматы"
+      },
+      {
+        "filename": "140_kabanbay_batyr_almaty-kazakhstan-0",
+        "title": "Димаш",
+        "category": ["Люди", "Артисты"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Неизвестный",
+        "location": "Кабанбай батыра 140, Алматы"
+      },
+      {
+        "filename": "140_kabanbay_batyr_almaty-kazakhstan-1",
+        "title": "Ожидание",
+        "category": ["Люди"],
+        "year": 2019,
+        "ratio": 1, 
+        "author": "Сауле Сулейменова и Куаныш Базаргалиев",
+        "location": "Кабанбай батыра 140, Алматы"
+      },
+      {
+        "filename": "112_kurmangazy_almaty-kazakhstan-0",
+        "title": "Борьба против вируса",
+        "category": ["Люди"],
+        "year": 2020,
+        "ratio": 1.33, 
+        "author": "Рауан Нусуп и Жумадиль Елюкенев",
+        "location": "Курмангазы 112, Алматы"
+      },
+      {
+        "filename": "183_chokin_almaty-kazakhstan-0",
+        "title": "Борьба против вируса",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 1.33, 
+        "author": "Неизвестный",
+        "location": "Чокина 183, Алматы"
+      },
+      {
+        "filename": "78_mametova_almaty-kazakhstan-0",
+        "title": "Космос",
+        "category": ["Космос"],
+        "year": 0,
+        "ratio": 1, 
+        "author": "Неизвестный",
+        "location": "Маметова 78, Алматы"
+      },
+      {
+        "filename": "111_abay_almaty-kazakhstan-0",
+        "title": "Абай",
+        "category": ["Люди", "Писатели"],
+        "year": 0,
+        "ratio": 1, 
+        "author": "Неизвестный",
+        "location": "Проспект Абая 111, Алматы"
+      },
+      {
+        "filename": "38a_auezov_almaty-kazakhstan-0",
+        "title": "Дали",
+        "category": ["Люди", "Артисты"],
+        "year": 2015,
+        "ratio": 1.33, 
+        "author": "Марина Зуми",
+        "location": "Ауэзова 38a, Алматы"
+      }
+    ]
+  }
+}

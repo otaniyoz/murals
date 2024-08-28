@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Sedgwick Ave Display";
-  src: url("fonts/sedgwickavedisplay-regular-webfont.woff") format("woff");
+  src: url("fonts/kablammo-regular-variablefont_morf-webfont.woff2") format("woff2");
+  font-family: "Kablammo";
   font-kerning: normal;
   font-display: swap;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
 }
 @font-face {
   font-family: "IBM Plex Sans";
@@ -19,7 +19,7 @@
   
   --text-main: #f8f8f2;
   --text-accent-main: #FB0001;
-  --text-accent-secondary: #0172C3;
+  --text-accent-secondary: #27a5ff;
   --text-secondary: #888888;
   --background-main: #111111; 
   --background-secondary: #111111dd;
@@ -52,19 +52,18 @@ nav {
 h1 {
   z-index: -12;
   display: block;
-  font-weight: 400;
   overflow: visible;
   margin-left: -1vw;
   line-height: 0.8em;
   width: fit-content;
   position: relative;
   white-space: nowrap;
+  font-family: "Kablammo";
 /*  transform: rotate(-5deg);*/
   padding: 3vmax 1vw 1vmin 1vw;
   color: var(--text-accent-main);
-  font-family: "Sedgwick Ave Display";
   /*-webkit-text-stroke: 0.6vmin var(--text-accent-secondary);
-  text-shadow: -0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax -0.3vmax 0.6vmin var(--text-accent-secondary), -0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary), 0.3vmax 0.3vmax 0.6vmin var(--text-accent-secondary);*/
+  text-shadow: -0.3vmax -0.3vmax 0 var(--text-accent-secondary), 0.3vmax -0.3vmax 0 var(--text-accent-secondary), -0.3vmax 0.3vmax 0 var(--text-accent-secondary), 0.3vmax 0.3vmax 0 var(--text-accent-secondary);*/
 }
 body {
   width: 100%;
@@ -81,8 +80,9 @@ footer {
 }
 a {
   padding: 0;
+  width: 100%;
   color: inherit;
-  transition: 0.75s;
+  transition: 0.5s;
   text-underline-offset: 10%;
   text-decoration-thickness: 0.25px;
   text-decoration-color: var(--text-secondary);
@@ -103,9 +103,12 @@ label {
   border-radius: 16vmax;
   padding: 1vmin 2vmax;
   margin: 1vmin 0.5vmin;
-  transition: 0.75s;
+  transition: 0.5s;
   font-weight: 700;
+  min-height: 32px;
+  min-width: 64px;
 }
+input[type="radio"],
 input[type="checkbox"] {
   display: none;
 }
@@ -113,6 +116,10 @@ input[type="checkbox"]:checked+label {
   transition: 0s;
   background: var(--text-accent-secondary);
   border-color: var(--text-accent-secondary);
+}
+input[type="radio"]:checked+label {
+  transition: 0s;
+  color: var(--text-accent-secondary);
 }
 label:hover {
   transition: 0s;
@@ -124,6 +131,22 @@ svg {
   opacity: 0.3;
   stroke: none;
   fill: var(--text-main);
+}
+.menu-wrapper {
+  display: flex;
+  padding-bottom: 2vmax;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.lang-wrapper > label {
+  border: none;
+  padding-right: 0;
+}
+.lang-wrapper, 
+.menu-wrapper {
+  overflow-y: hidden;
+  height: fit-content;
+  min-width: fit-content;
 }
 .row {
 	gap: 2vmax;
@@ -225,6 +248,7 @@ svg {
 @media (prefers-color-scheme: light) {
   :root {
     --text-main: #111111;
+    --text-accent-secondary: #0172C3;
     --background-main: #f8f8f2; 
     --background-secondary: #f8f8f2dd;
   }

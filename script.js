@@ -145,10 +145,6 @@ window.onload = () => {
     event.target.classList.remove('loading');
   }
 
-  function includesAll(array, values) {
-    return values.every(v => array.includes(v));
-  }
-
   function buildGallery() {
     let imageCount = 0;
     const w = window.innerWidth;

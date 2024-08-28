@@ -145,6 +145,10 @@ window.onload = () => {
     event.target.classList.remove('loading');
   }
 
+  function includesAll(array, values) {
+    return values.every(v => array.includes(v));
+  }
+
   function buildGallery() {
     let imageCount = 0;
     const w = window.innerWidth;
@@ -190,7 +194,7 @@ window.onload = () => {
                 categories.push(category);
               }
             }
-            if (!checkedCategories.length || image.category.some(cat => checkedCategories.includes(cat))) {
+            if (!checkedCategories.length || checkedCategories.every(v => image.category.includes(v))) {
               imageFileNames.push(image.filename);
               const imageWidth = (w - 4*vmin - (columns - 1)*2*vmax) / columns;
               const imageHeight = parseFloat(image.ratio) * imageWidth; 

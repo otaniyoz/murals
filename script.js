@@ -1,6 +1,8 @@
 'use strict';
 window.onload = () => {
   function fitTextToWidth(element) {
+    clearTimeout(timeoutId);
+    
     let iter = 0;
     const minSize = 16;
     const maxSize = 640;
@@ -219,7 +221,7 @@ window.onload = () => {
     if (event.target.checked) checkedCategories.push(category);
     else checkedCategories = checkedCategories.filter(cat => cat !== category);
     buildGallery();
-    timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);    
+    timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);    
   }
 
   function resizePage() {
@@ -246,7 +248,7 @@ window.onload = () => {
         image.style.height = `${imageHeight}px`;  
       }
     }
-    timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
+    timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);
     const imageDescriptionContainer = document.getElementById('modal').children[0].children;
     if (imageDescriptionContainer[0].dataset.ratio < h / paddedWindowWidth) {
       imageDescriptionContainer[0].style.width = `${paddedWindowWidth}px`;
@@ -277,7 +279,7 @@ window.onload = () => {
         document.getElementById('contribution').textContent = hints['contribution'][lang];
         buildGallery();
         document.title = title.textContent;
-        timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
+        timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);
       }
     });
   }
@@ -287,6 +289,7 @@ window.onload = () => {
   let lang = 'en';
   let timeoutId = null;
   let curtainYOffset = 0;
+  const debounce = 200;
   const categories = [];
   let imageFileNames = [];
   let checkedCategories = [];
@@ -331,5 +334,5 @@ window.onload = () => {
     radio.addEventListener('change', changeLanguage);
   });
   window.addEventListener('resize', resizePage);
-  timeoutId = setTimeout(() => { fitTextToWidth(title); }, 100);
+  timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);
 };

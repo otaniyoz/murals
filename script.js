@@ -1,5 +1,15 @@
 'use strict';
 window.onload = () => {
+  function debounce(callback, waitDuration) {
+    let timer = null;
+    return (...args) => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        callback(...args);
+      }, waitDuration);
+    };
+  }
+
   function fitTextToWidth(element) {
     let iter = 0;
     const minSize = 16;
@@ -206,11 +216,11 @@ window.onload = () => {
           navBar.appendChild(selectorLabel);
         })  
       }
-      
       if (!counter.textContent) {
         counter.textContent = `${imageCount}`;
         document.title = title.textContent;  
-      } 
+      }
+      debounce(fitTextToWidth(title), waitDuration);
     }).catch(error => console.error('Error fetching JSON:', error));
   }
 
@@ -219,7 +229,6 @@ window.onload = () => {
     if (event.target.checked) checkedCategories.push(category);
     else checkedCategories = checkedCategories.filter(cat => cat !== category);
     buildGallery();
-    timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);    
   }
 
   function resizePage() {
@@ -245,8 +254,8 @@ window.onload = () => {
         image.style.width = `${imageWidth}px`;
         image.style.height = `${imageHeight}px`;  
       }
+      debounce(fitTextToWidth(title), waitDuration);
     }
-    timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);
     const imageDescriptionContainer = document.getElementById('modal').children[0].children;
     if (imageDescriptionContainer[0].dataset.ratio < h / paddedWindowWidth) {
       imageDescriptionContainer[0].style.width = `${paddedWindowWidth}px`;
@@ -277,7 +286,6 @@ window.onload = () => {
         document.getElementById('contribution').textContent = hints['contribution'][lang];
         buildGallery();
         document.title = title.textContent;
-        timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);
       }
     });
   }
@@ -286,10 +294,10 @@ window.onload = () => {
   let columns = 1;
   let lang = 'en';
   let timeoutId = null;
-  let curtainYOffset = 0;
-  const debounce = 200;
   const categories = [];
+  let curtainYOffset = 0;
   let imageFileNames = [];
+  const waitDuration = 450;
   let checkedCategories = [];
   let datafile = 'data/en.json';
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,10000]];
@@ -312,7 +320,7 @@ window.onload = () => {
   }, 
   {
     root: null,
-    threshold: 0.2, // 20% of the image has to be visible to load it
+    threshold: 0.05, // 5% of the image has to be visible to load it
   });
 
   // sets up mutation observer to handle dynamically added images
@@ -332,5 +340,4 @@ window.onload = () => {
     radio.addEventListener('change', changeLanguage);
   });
   window.addEventListener('resize', resizePage);
-  timeoutId = setTimeout(() => { fitTextToWidth(title); }, debounce);
 };

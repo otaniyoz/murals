@@ -141,6 +141,10 @@ window.onload = () => {
     imageDescriptionContainer[1].style.width = `${imageDescriptionContainer[0].width + 8}px`;
   }
 
+  function handleLoadedImage(event) {
+    event.target.classList.remove('loading');
+  }
+
   function buildGallery() {
     let imageCount = 0;
     const w = window.innerWidth;
@@ -191,6 +195,7 @@ window.onload = () => {
               const imageWidth = (w - 4*vmin - (columns - 1)*2*vmax) / columns;
               const imageHeight = parseFloat(image.ratio) * imageWidth; 
               img.addEventListener('click', showModal);
+              img.addEventListener('load', handleLoadedImage, { once: true });
               col.appendChild(img);
               img.style.width = `${imageWidth}px`;
               img.style.height = `${imageHeight}px`;
@@ -314,13 +319,14 @@ window.onload = () => {
       if (entry.isIntersecting) {
         const lazyImage = entry.target;
         lazyImage.src = `images/${lazyImage.id}.jpg`;
+        lazyImage.classList.add('loading');
         io.unobserve(lazyImage);
       }
     });
   }, 
   {
     root: null,
-    threshold: 0.05, // 5% of the image has to be visible to load it
+    threshold: 0.05, // 5% of the image has to be visible to begin loading it
   });
 
   // sets up mutation observer to handle dynamically added images
@@ -328,9 +334,9 @@ window.onload = () => {
   const mo = new MutationObserver((mutationList, _) => {
     const images = muralsContainer.getElementsByTagName('img');
     for (const image of images) {
-      if (!image.classList.contains('loaded')) {
+      if (!image.classList.contains('observing')) {
         io.observe(image);
-        image.classList.add('loaded');  
+        image.classList.add('observing');
       }
     }
   });

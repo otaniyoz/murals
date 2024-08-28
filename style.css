@@ -18,7 +18,7 @@
   color-scheme: light dark;
   
   --text-main: #f8f8f2;
-  --text-accent-main: #FB0001;
+  --text-accent-main: #fb0001;
   --text-accent-secondary: #27a5ff;
   --text-secondary: #888888;
   --background-main: #111111; 
@@ -81,7 +81,7 @@ a {
   color: inherit;
   transition: 0.5s;
   text-underline-offset: 0.195em;
-  text-decoration-thickness: 0.25px;
+  text-decoration-thickness: 1px;
   text-decoration-color: var(--text-secondary);
 }
 a:hover {
@@ -94,7 +94,7 @@ img {
 }
 label {
   font-size: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
-  border: 0.25px solid var(--text-secondary);
+  border: 1px solid var(--text-secondary);
   background: var(--background-main);
   font-family: "IBM Plex Sans";
   vertical-align: baseline;
@@ -129,6 +129,13 @@ svg {
   opacity: 0.3;
   stroke: none;
   fill: var(--text-main);
+}
+img.loading {
+  opacity: 0;
+  animation: pulsate 2s linear infinite;
+}
+@keyframes pulsate {
+  50% { opacity: 1; }
 }
 .menu-wrapper {
   display: flex;

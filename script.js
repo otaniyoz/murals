@@ -287,6 +287,7 @@ window.onload = () => {
         title.innerHTML = `<span id="counter"></span>${hints['title'][lang]}`;
         counter = document.getElementById('counter');
         document.getElementById('contribution').textContent = hints['contribution'][lang];
+        document.getElementById('contribution-link').href = hints['contribution-link'][lang];
         buildGallery();
         document.title = title.textContent;
       }
@@ -310,7 +311,9 @@ window.onload = () => {
   const title = document.getElementById('title');
   const hints = {
     'title': {'en': ' ⁠murals', 'ru': ' ⁠мурала'},
-    'contribution': {'en': 'About', 'ru': 'О проекте'}
+    'contribution': {'en': 'About', 'ru': 'О проекте'},
+    'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 
+    'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}
   }
   initModal();
   if (localStorage.getItem('murals-lang') && localStorage.getItem('murals-lang') !== lang) {
@@ -321,6 +324,7 @@ window.onload = () => {
     title.innerHTML = `<span id="counter"></span>${hints['title'][lang]}`;
     counter = document.getElementById('counter');
     document.getElementById('contribution').textContent = hints['contribution'][lang];
+    document.getElementById('contribution-link').href = hints['contribution-link'][lang];
   }
   buildGallery();
 

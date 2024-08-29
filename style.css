@@ -1,6 +1,6 @@
 @font-face {
-  src: url("fonts/kablammo-regular-variablefont_morf-webfont.woff2") format("woff2");
-  font-family: "Kablammo";
+  src: url("fonts/comforter-regular-webfont.woff2") format("woff2");
+  font-family: "Comforter";
   font-kerning: normal;
   font-display: swap;
   font-style: normal;
@@ -58,7 +58,7 @@ h1 {
   width: fit-content;
   position: relative;
   white-space: nowrap;
-  font-family: "Kablammo";
+  font-family: "Comforter";
   padding: 3vmax 1vw 1vmin 1vw;
   color: var(--text-accent-main);
 }

@@ -90,6 +90,8 @@ a:hover {
 }
 img {
   max-height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
   background: var(--background-secondary);
 }
 label {
@@ -136,6 +138,9 @@ img.loading {
   opacity: 0;
   animation: pulsate 2s linear infinite;
 }
+img.loaded {
+  transform: translateX(0);
+}
 @keyframes pulsate {
   50% { opacity: 1; }
 }
@@ -167,6 +172,7 @@ img.loading {
 	gap: 2vmax;
   width: 100%;
 	display: flex;
+  overflow-y: hidden;
 	flex-flow: column nowrap;
 }
 .hidden {

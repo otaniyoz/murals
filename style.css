@@ -59,7 +59,7 @@ h1 {
   position: relative;
   white-space: nowrap;
   font-family: "Comforter";
-  padding: 3vmax 1vw 1vmin 1vw;
+  padding: 1vmax 1vw 1vmin 1vw;
   color: var(--text-accent-main);
 }
 body {
@@ -88,11 +88,16 @@ a:hover {
   transition: 0s;
   text-decoration-color: var(--text-accent-secondary);
 }
+picture {
+  overflow: hidden;
+}
 img {
+  opacity: 0;
   max-height: 100%;
-  transform: translateY(100%);
-  transition: transform 0.5s ease;
-  background: var(--background-secondary);
+  transition: opacity 0.5s ease-in;
+}
+img.loaded {
+  opacity: 1;
 }
 label {
   font-size: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
@@ -132,17 +137,22 @@ svg {
   height: 4vh;
   opacity: 0.3;
   stroke: none;
-  fill: var(--text-main);
+  fill: var(--text-secondary);
+  color: var(--text-secondary);
 }
-img.loading {
-  opacity: 0;
-  animation: pulsate 2s linear infinite;
+.image-placeholder {
+  z-index: -12;
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  background: var(--background-main);
 }
-img.loaded {
-  transform: translateX(0);
+.loading-roundbar {
+  animation: rotate 0.75s linear infinite;
 }
-@keyframes pulsate {
-  50% { opacity: 1; }
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  25%, 100% { transform: rotate(360deg); }
 }
 .menu-wrapper {
   display: flex;
@@ -187,7 +197,6 @@ img.loaded {
   padding-inline: 0;
   position: absolute;
   top: calc(50vh - 49vw);
-  color: var(--text-secondary);
 }
 #left {
   left: 0;
@@ -213,6 +222,7 @@ img.loaded {
   transition: 0.1s;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s ease-in;
   background: var(--background-main);
 }
 .image-description-container {

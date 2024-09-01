@@ -112,12 +112,13 @@ window.onload = () => {
         else if (numAuthors >= 3) {
           let i;
           for (i = 0; i < numAuthors - 1; i++) {
-            description += authors[i];
+            description += `${authors[i]}, `;
           }
-          description += `, and ${authors[i + 1]}`;
+          description += `and ${authors[i]}`;
         }
       }
       if (description.length) description += '. ';
+      if (imageDataset.note.length) description += `${imageDataset.note} `;
       description += `${imageDataset.location}, ${imageDataset.city}, ${imageDataset.country}`;
       return description;
     }
@@ -131,12 +132,13 @@ window.onload = () => {
         else if (numAuthors >= 3) {
           let i;
           for (i = 0; i < numAuthors - 1; i++) {
-            description += authors[i];
+            description += `${authors[i]}, `;
           }
-          description += `, и ${authors[i + 1]}`;
+          description += `и ${authors[i]}`;
         }
         description += '. ';
       }
+      if (imageDataset.note.length) description += `${imageDataset.note} `;
       description += `${imageDataset.location}, ${imageDataset.city}, ${imageDataset.country}`;
       return description;
     }
@@ -241,6 +243,7 @@ window.onload = () => {
             img.id = image.filename;
             img.setAttribute('data-year', image.year);
             img.setAttribute('data-city', image.city);
+            img.setAttribute('data-note', image.note);
             img.setAttribute('data-title', image.title);
             img.setAttribute('data-ratio', image.ratio);
             img.setAttribute('data-author', image.author);

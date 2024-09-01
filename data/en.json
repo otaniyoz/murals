@@ -4,11 +4,12 @@
     "images": [
       {
         "filename": "38_kunayev-almaty-kazakhstan-0",
-        "title": "Let's fear together",
+        "title": "Woof, the kitty",
         "category": ["Animals"],
         "year": 0,
         "ratio": 1.33,
-        "author": ["Pasha Kas"], 
+        "note": "The kitten and the inscription ‘a-let's be afraid together’ is a reference to a kitten named Woof, a character from the Soviet animation of the same name. In the story, Woof knows that we should be afraid of thunderstorms together.",
+        "author": ["Pasha Kas"],
         "city": "Almaty",
         "location": "38 Kunayev street"
       },
@@ -18,6 +19,7 @@
         "category": ["People"],
         "year": 2022,
         "ratio": 1,
+        "note": "",
         "city": "Almaty",
         "author": ["Rauan Nusup", "Zhumadil Yelyukenev"],
         "location": "71 Kabanbay batyr street"
@@ -28,6 +30,7 @@
         "category": ["People", "Athletes"],
         "year": 2019,
         "ratio": 1,
+        "note": "",
         "city": "Almaty",
         "author": ["Gafura Kairbekova"],
         "location": "16 Dostyk avenue"
@@ -37,7 +40,8 @@
         "title": "The girl with petroglyphs",
         "category": ["People", "Fruits"],
         "year": 0,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "city": "Almaty",
         "author": ["Alexander Blagyi"],
         "location": "31 Kurmangazy street"
@@ -47,7 +51,8 @@
         "title": "Space",
         "category": ["People", "Space"],
         "year": 0,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "city": "Almaty",
         "author": ["Repas"],
         "location": "31 Kurmangazy street"
@@ -58,7 +63,8 @@
         "category": ["People", "Fruits"],
         "year": 2013,
         "ratio": 1.33,
-        "author": [],
+        "note": "",
+        "author": ["Stepan ‘310’ Krasnov"],
         "city": "Almaty",
         "location": "33 Kurmangazy street"
       },
@@ -68,6 +74,7 @@
         "category": ["Animals", "Vehicles"],
         "year": 2017,
         "ratio": 1.33,
+        "note": "",
         "city": "Almaty",
         "author": ["Neon shaman"],
         "location": "59 Abylai khan avenue"
@@ -78,6 +85,7 @@
         "category": ["People", "Artists", "Writers"],
         "year": 0,
         "ratio": 0.75,
+        "note": "",
         "author": [],
         "city": "Almaty",
         "location": "101 Panfilov street"
@@ -88,16 +96,18 @@
         "category": ["People", "Artists", "Writers"],
         "year": 0,
         "ratio": 0.75,
+        "note": "",
         "author": [],
         "city": "Almaty",
         "location": "101 Panfilov street"
       },
       {
         "filename": "97_shevchenko-almaty-kazakhstan-0",
-        "title": "",
+        "title": "Transsiberian express",
         "category": ["People", "Animals", "Vehicles"],
         "year": 0,
         "ratio": 1.33,
+        "note": "",
         "author": [],
         "city": "Almaty",
         "location": "97 Shevchenko street"
@@ -107,7 +117,8 @@
         "title": "",
         "category": ["People", "Athletes"],
         "year": 2016,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "author": ["Repas"],
         "city": "Almaty",
         "location": "125 Tole bi street"
@@ -118,6 +129,7 @@
         "category": ["People", "Space"],
         "year": 0,
         "ratio": 1.33,
+        "note": "",
         "author": ["Repas"],
         "city": "Almaty",
         "location": "125 Tole bi street"
@@ -128,6 +140,7 @@
         "category": ["People", "Writers"],
         "year": 0,
         "ratio": 1.33,
+        "note": "",
         "author": [],
         "city": "Almaty",
         "location": "153 Gogol street"
@@ -138,6 +151,7 @@
         "category": ["People", "Writers"],
         "year": 2021,
         "ratio": 1.33,
+        "note": "",
         "city": "Almaty",
         "author": ["Nurbolat Amankul", "Abai Sultan"],
         "location": "186 Makataev street"
@@ -148,8 +162,9 @@
         "category": ["Animals", "People", "Mythical"],
         "year": 2019,
         "ratio": 1,
+        "note": "",
         "city": "Almaty",
-        "author": ["Nurbolat Amankul"],
+        "author": ["Nurbolat Amankul", "Kenes Bekbolat", "Mukhit Dulu"],
         "location": "118 Nazarbayev avenue"
       },
       {
@@ -157,7 +172,8 @@
         "title": "Qarlygash",
         "category": ["Animals"],
         "year": 0,
-        "ratio": 0.75, 
+        "ratio": 0.75,
+        "note": "", 
         "author": [],
         "city": "Almaty",
         "location": "145 Nazarbayev avenue"
@@ -166,9 +182,10 @@
         "filename": "202_kozhamkulov-almaty-kazakhstan-0",
         "title": "Snow leopard",
         "category": ["Animals", "People"],
-        "year": 0,
+        "year": 2016,
         "ratio": 1.33,
-        "author": [],
+        "note": "",
+        "author": ["Konstantin ‘Zmogk’ Danilov"],
         "city": "Almaty",
         "location": "202 Kozhamkulov street"
       },
@@ -177,7 +194,8 @@
         "title": "The children are painting the world",
         "category": ["Animals", "People"],
         "year": 0,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "author": [],
         "city": "Almaty",
         "location": "122 Valikhanov street"
@@ -185,10 +203,11 @@
       {
         "filename": "127_pushkin-almaty-kazakhstan-0",
         "title": "QZ",
-        "category": [],
-        "year": 0,
+        "category": ["Freehand", "Spray"],
+        "year": 2017,
         "ratio": 1,
-        "author": [],
+        "note": "",
+        "author": ["Jay Fanakapan"],
         "city": "Almaty",
         "location": "127 Pushkin street"
       },
@@ -197,6 +216,7 @@
         "title": "Future is my choice",
         "category": [],
         "year": 0,
+        "note": "",
         "author": [],
         "ratio": 0.75,
         "city": "Almaty", 
@@ -207,7 +227,8 @@
         "title": "Tram route four",
         "category": ["Vehicles"],
         "year": 0,
-        "ratio": 0.56, 
+        "ratio": 0.56,
+        "note": "", 
         "author": ["Repas"],
         "city": "Almaty",
         "location": "41 Shevchenko street"
@@ -217,7 +238,8 @@
         "title": "My name is Kozha",
         "category": ["People", "Films"],
         "year": 0,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "author": [],
         "city": "Almaty",
         "location": "122 Aimanov street"
@@ -227,7 +249,8 @@
         "title": "Bride",
         "category": ["People", "Animals"],
         "year": 2017,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "city": "Almaty",
         "author": ["Mukhit Dulu"],
         "location": "88 Zheltoksan street"
@@ -237,19 +260,21 @@
         "title": "E-salyq",
         "category": ["People"],
         "year": 0,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "author": [],
         "city": "Almaty",
         "location": "53 Makataev street"
       },
       {
         "filename": "55_kabanbay_batyr-almaty-kazakhstan-0",
-        "title": "",
+        "title": "Venus",
         "category": ["People", "Mythical"],
         "year": 0,
         "ratio": 1.33, 
-        "city": "Almaty",
+        "note": "",
         "author": ["Repas"],
+        "city": "Almaty",
         "location": "55 Kabanbay batyr street"
       },
       {
@@ -259,6 +284,7 @@
         "year": 0,
         "ratio": 1.33, 
         "author": [],
+        "note": "",
         "city": "Almaty",
         "location": "140 Kabanbay batyr street"
       },
@@ -267,7 +293,8 @@
         "title": "Anticipation",
         "category": ["People"],
         "year": 2019,
-        "ratio": 1, 
+        "ratio": 1,
+        "note": "", 
         "city": "Almaty",
         "author": ["Saule Suleimenova", "Kuanysh Bazargaliev"],
         "location": "140 Kabanbay batyr street"
@@ -277,7 +304,8 @@
         "title": "Battle against the virus",
         "category": ["People"],
         "year": 2020,
-        "ratio": 1.33, 
+        "ratio": 1.33,
+        "note": "", 
         "city": "Almaty",
         "author": ["Rauan Nusup", "Zhumadil Yelyukenev"],
         "location": "112 Kurmangazy street"
@@ -286,9 +314,10 @@
         "filename": "183_chokin-almaty-kazakhstan-0",
         "title": "Battle against the virus",
         "category": ["People"],
-        "year": 0,
+        "year": 2020,
         "ratio": 1.33,
-        "author": [],
+        "note": "",
+        "author": ["Dzhokhar Yunusov", "Tamara Yelfimova"],
         "city": "Almaty", 
         "location": "183 Chokin street"
       },
@@ -297,17 +326,19 @@
         "title": "Space",
         "category": ["Space"],
         "year": 0,
-        "ratio": 1, 
+        "ratio": 1,
+        "note": "", 
         "author": [],
         "city": "Almaty",
         "location": "78 Mametova street"
       },
       {
         "filename": "111_abay-almaty-kazakhstan-0",
-        "title": "Abay",
+        "title": "20 tenge",
         "category": ["People", "Writers"],
         "year": 0,
-        "ratio": 1, 
+        "ratio": 1,
+        "note": "",
         "author": [],
         "city": "Almaty",
         "location": "111 Abay avenue"
@@ -317,9 +348,10 @@
         "title": "Dali",
         "category": ["People", "Artists"],
         "year": 2015,
-        "ratio": 1.33, 
-        "city": "Almaty",
+        "ratio": 1.33,
+        "note": "",
         "author": ["Marina Zumi"],
+        "city": "Almaty",
         "location": "38a Auezov street"
       }
     ]

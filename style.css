@@ -108,6 +108,7 @@ label {
   padding: 1vmin 1.5vmax;
   border-radius: 16vmax;
   margin: 1vmin 0.5vmin;
+  white-space: nowrap;
   transition: 0.5s;
   font-weight: 700;
   min-height: 32px;

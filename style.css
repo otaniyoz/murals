@@ -72,6 +72,8 @@ body {
   font-size: clamp(1rem, 1vmin + 1rem, 4rem);
 }
 footer {
+  gap: 2vmax;
+  display: grid;
 	padding-top: 8vmax;
 	padding-bottom: 1vmax;
 }
@@ -104,10 +106,10 @@ label {
   border: 1px solid var(--text-secondary);
   background: var(--background-main);
   font-family: "IBM Plex Sans";
-  vertical-align: baseline;
   padding: 1vmin 1.5vmax;
   border-radius: 16vmax;
   margin: 1vmin 0.5vmin;
+  align-content: center;
   white-space: nowrap;
   transition: 0.5s;
   font-weight: 700;

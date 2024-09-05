@@ -313,6 +313,7 @@ window.onload = () => {
         document.title = title.textContent;  
       }
       debounce(fitTextToWidth(title), waitDuration);
+      document.getElementsByTagName('footer')[0].style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     }).catch(error => console.error('Error fetching JSON:', error));
   }
 
@@ -366,6 +367,7 @@ window.onload = () => {
         counter = document.getElementById('counter');
         document.getElementById('contribution').textContent = hints['contribution'][lang];
         document.getElementById('contribution-link').href = hints['contribution-link'][lang];
+        document.getElementById('signoff').textContent = hints['signoff'][lang];
         buildGallery();
         document.title = title.textContent;
       }
@@ -390,8 +392,8 @@ window.onload = () => {
   const hints = {
     'title': {'en': ' ⁠murals', 'ru': ' ⁠мурала'},
     'contribution': {'en': 'About', 'ru': 'О проекте'},
-    'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 
-    'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}
+    'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'},
+    'signoff': {'en': 'Designed and\u00A0developed by\u00A0Otaniyoz in\u00A02024', 'ru': 'Задизайнил и\u00A0разработал Отаниёз в\u00A02024'}
   }
   initModal();
   if (localStorage.getItem('murals-lang') && localStorage.getItem('murals-lang') !== lang) {
@@ -403,6 +405,7 @@ window.onload = () => {
     counter = document.getElementById('counter');
     document.getElementById('contribution').textContent = hints['contribution'][lang];
     document.getElementById('contribution-link').href = hints['contribution-link'][lang];
+    document.getElementById('signoff').textContent = hints['signoff'][lang];
   }
   buildGallery();
 

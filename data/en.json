@@ -3,9 +3,64 @@
     "title": "Kazakhstan",
     "images": [
       {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-2",
+        "title": "",
+        "category": ["Animals", "Space", "Characters", "People"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Repas"],
+        "note": "",
+        "city": "Almaty",
+        "location": "42 Timiryazeva street, hall 16"
+      },
+      {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-1",
+        "title": "",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Repas"],
+        "note": "",
+        "city": "Almaty",
+        "location": "42 Timiryazeva street, hall 16"
+      },
+      {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Repas"],
+        "note": "",
+        "city": "Almaty",
+        "location": "42 Timiryazeva street, hall 16"
+      },
+      {
+        "filename": "144_zheltoksan-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["People", "Objects"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "144 Zheltoksan street"
+      },
+      {
+        "filename": "44_nazarbayev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Spray", "Freehand"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Repas"],
+        "note": "",
+        "city": "Almaty",
+        "location": "44 Nazarbayev avenue"
+      },
+      {
         "filename": "38_kunayev-almaty-kazakhstan-0",
         "title": "Woof, the kitty",
-        "category": ["Animals"],
+        "category": ["Animals", "Characters"],
         "year": 2017,
         "ratio": 1.33,
         "note": "The kitten and the inscription ‘a-let's be afraid together’ is a reference to a kitten named Woof, a character from the Soviet animation of the same name. In the story, Woof knows that we should be afraid of thunderstorms together.",
@@ -38,7 +93,7 @@
       {
         "filename": "31_kurmangazy-almaty-kazakhstan-0",
         "title": "The girl with petroglyphs",
-        "category": ["People", "Fruits"],
+        "category": ["People", "Objects"],
         "year": 0,
         "ratio": 1.33,
         "note": "", 
@@ -60,7 +115,7 @@
       {
         "filename": "33_kurmangazy-almaty-kazakhstan-0",
         "title": "The father of apples",
-        "category": ["People", "Fruits"],
+        "category": ["People", "Objects"],
         "year": 2013,
         "ratio": 1.33,
         "note": "",
@@ -236,7 +291,7 @@
       {
         "filename": "122_aimanov-almaty-kazakhstan-0",
         "title": "My name is Kozha",
-        "category": ["People", "Films"],
+        "category": ["People", "Characters"],
         "year": 0,
         "ratio": 1.33,
         "note": "", 

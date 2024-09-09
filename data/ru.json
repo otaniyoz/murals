@@ -3,9 +3,64 @@
     "title": "Казахстан",
     "images": [
       {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-2",
+        "title": "",
+        "category": ["Животные", "Космос", "Персонажи", "Люди"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Репас"],
+        "note": "",
+        "city": "Алматы",
+        "location": "Тимирязева 42, павильон 16"
+      },
+      {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-1",
+        "title": "",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Репас"],
+        "note": "",
+        "city": "Алматы",
+        "location": "Тимирязева 42, павильон 16"
+      },
+      {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Репас"],
+        "note": "",
+        "city": "Алматы",
+        "location": "Тимирязева 42, павильон 16"
+      },
+      {
+        "filename": "144_zheltoksan-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Люди", "Предметы"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Желтоксан 144"
+      },
+      {
+        "filename": "44_nazarbayev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Балончик", "От руки"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Репас"],
+        "note": "",
+        "city": "Алматы",
+        "location": "Проспект Назарбаева 44"
+      },
+      {
         "filename": "38_kunayev-almaty-kazakhstan-0",
         "title": "Котёнок Гав",
-        "category": ["Животные"],
+        "category": ["Животные", "Персонажи"],
         "year": 2017,
         "ratio": 1.33,
         "author": ["Паша Кас"],
@@ -38,7 +93,7 @@
       {
         "filename": "31_kurmangazy-almaty-kazakhstan-0",
         "title": "Девочка с петроглифами",
-        "category": ["Люди", "Фрукты"],
+        "category": ["Люди", "Предметы"],
         "year": 0,
         "ratio": 1.33, 
         "note": "", 
@@ -60,7 +115,7 @@
       {
         "filename": "33_kurmangazy-almaty-kazakhstan-0",
         "title": "Отец яблок",
-        "category": ["Люди", "Фрукты"],
+        "category": ["Люди", "Предметы"],
         "year": 2013,
         "ratio": 1.33,
         "note": "",
@@ -236,7 +291,7 @@
       {
         "filename": "122_aimanov-almaty-kazakhstan-0",
         "title": "Меня зовут Кожа",
-        "category": ["Люди", "Кино"],
+        "category": ["Люди", "Персонажи"],
         "year": 0,
         "ratio": 1.33,
         "note": "", 

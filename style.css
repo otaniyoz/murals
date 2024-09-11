@@ -169,6 +169,7 @@ svg {
   padding-right: 0;
   font-weight: 400;
   padding-left: 1vmax;
+  background: transparent;
   font-size: clamp(1rem, 1vmin + 1rem, 4rem);
 }
 .lang-wrapper, 

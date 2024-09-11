@@ -3,6 +3,105 @@
     "title": "Kazakhstan",
     "images": [
       {
+        "filename": "68_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "68 Zhibek zholy street"
+      },
+      {
+        "filename": "59_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Animals", "Freehand", "Spray"],
+        "year": 0,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "59 Zhibek zholy street"
+      },
+      {
+        "filename": "33_valikhanov-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Animals", "Freehand", "Spray"],
+        "year": 0,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "33 Valikhanov street"
+      },
+      {
+        "filename": "110_panfilov-almaty-kazakhstan-0",
+        "title": "Start your impossible",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "110 Panfilov street"
+      },
+      {
+        "filename": "55_karasai_batyr-almaty-kazakhstan-0",
+        "title": "",
+        "category": [],
+        "year": 0,
+        "ratio": 1.33,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "55 Karasai batyr street"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-3",
+        "title": "",
+        "category": ["Objects"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "36 Baribayev street"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-2",
+        "title": "",
+        "category": [],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "36 Baribayev street"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-1",
+        "title": "",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "36 Baribayev street"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["People", "Animals"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "location": "36 Baribayev street"
+      },
+      {
         "filename": "42_16_timiryazev-almaty-kazakhstan-2",
         "title": "",
         "category": ["Animals", "Space", "Characters", "People"],
@@ -124,7 +223,7 @@
         "location": "33 Kurmangazy street"
       },
       {
-        "filename": "59_abylaikhan-almaty-kazakhstan-0",
+        "filename": "59_abylai_khan-almaty-kazakhstan-0",
         "title": "Barys 2.0",
         "category": ["Animals", "Vehicles"],
         "year": 2017,

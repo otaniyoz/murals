@@ -57,6 +57,7 @@ h1 {
   line-height: 0.8em;
   width: fit-content;
   position: relative;
+  margin-top: -2vmax;
   white-space: nowrap;
   font-family: "Comforter";
   padding: 1vmax 1vw 1vmin 1vw;
@@ -250,9 +251,6 @@ svg {
   background: var(--background-secondary);
 }
 @media screen and (min-width: 1024px) {
-  h1 {
-    margin-top: 2vmax;
-  }
   .modal-container {
     padding: 0 12vw;
   }

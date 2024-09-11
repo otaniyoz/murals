@@ -3,6 +3,105 @@
     "title": "Казахстан",
     "images": [
       {
+        "filename": "68_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 1.33,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Жибек жолы 68"
+      },
+      {
+        "filename": "59_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Животные", "От руки", "Балончик"],
+        "year": 0,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Жибек жолы 59"
+      },
+      {
+        "filename": "33_valikhanov-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Животные", "От руки", "Балончик"],
+        "year": 0,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Валиханова 33"
+      },
+      {
+        "filename": "110_panfilov-almaty-kazakhstan-0",
+        "title": "Начни своё невозможное",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Панфилова 110"
+      },
+      {
+        "filename": "55_karasai_batyr-almaty-kazakhstan-0",
+        "title": "",
+        "category": [],
+        "year": 0,
+        "ratio": 1.33,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Карасай батыра 55"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-3",
+        "title": "",
+        "category": ["Предметы"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Барибаева 36"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-2",
+        "title": "",
+        "category": [],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Барибаева 36"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-1",
+        "title": "",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Барибаева 36"
+      },
+      {
+        "filename": "36_baribayev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Люди", "Животные"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "location": "Барибаева 36"
+      },
+      {
         "filename": "42_16_timiryazev-almaty-kazakhstan-2",
         "title": "",
         "category": ["Животные", "Космос", "Персонажи", "Люди"],
@@ -124,7 +223,7 @@
         "location": "Курмангазы 33"
       },
       {
-        "filename": "59_abylaikhan-almaty-kazakhstan-0",
+        "filename": "59_abylai_khan-almaty-kazakhstan-0",
         "title": "Барыс 2.0",
         "category": ["Животные", "Транспорт"],
         "year": 2017,

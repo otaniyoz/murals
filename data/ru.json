@@ -3,6 +3,17 @@
     "title": "Казахстан",
     "images": [
       {
+        "filename": "54_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Животные", "От руки", "Балончик"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Гаммакриэйтс"],
+        "note": "",
+        "city": "Алматы",
+        "location": "54 Жибек жолы"
+      },
+      {
         "filename": "68_zhibek_zholy-almaty-kazakhstan-0",
         "title": "",
         "category": ["Люди"],
@@ -19,7 +30,7 @@
         "category": ["Животные", "От руки", "Балончик"],
         "year": 0,
         "ratio": 1,
-        "author": [],
+        "author": ["Гаммакриэйтс"],
         "note": "",
         "city": "Алматы",
         "location": "Жибек жолы 59"
@@ -30,7 +41,7 @@
         "category": ["Животные", "От руки", "Балончик"],
         "year": 0,
         "ratio": 1,
-        "author": [],
+        "author": ["Гаммакриэйтс"],
         "note": "",
         "city": "Алматы",
         "location": "Валиханова 33"
@@ -49,7 +60,7 @@
       {
         "filename": "55_karasai_batyr-almaty-kazakhstan-0",
         "title": "",
-        "category": [],
+        "category": ["Предметы", "Люди", "Животные"],
         "year": 0,
         "ratio": 1.33,
         "author": [],
@@ -71,7 +82,7 @@
       {
         "filename": "36_baribayev-almaty-kazakhstan-2",
         "title": "",
-        "category": [],
+        "category": ["Мифическое"],
         "year": 0,
         "ratio": 0.75,
         "author": [],
@@ -181,7 +192,7 @@
       {
         "filename": "16_dostyk-almaty-kazakhstan-0",
         "title": "Букреев",
-        "category": ["Люди", "Атлеты"],
+        "category": ["Люди", "Знаменитости"],
         "year": 2019,
         "ratio": 1,
         "note": "",
@@ -236,7 +247,7 @@
       {
         "filename": "101_panfilov-almaty-kazakhstan-0",
         "title": "Батыр",
-        "category": ["Люди", "Артисты", "Писатели"],
+        "category": ["Люди", "Знаменитости"],
         "year": 0,
         "ratio": 0.75,
         "author": [],
@@ -247,7 +258,7 @@
       {
         "filename": "101_panfilov-almaty-kazakhstan-1",
         "title": "Батыр",
-        "category": ["Люди", "Артисты", "Писатели"],
+        "category": ["Люди", "Знаменитости"],
         "year": 0,
         "ratio": 0.75,
         "author": [],
@@ -269,7 +280,7 @@
       {
         "filename": "125_tolebi-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Люди", "Атлеты"],
+        "category": ["Люди"],
         "year": 2016,
         "ratio": 1.33,
         "note": "",
@@ -291,7 +302,7 @@
       {
         "filename": "153_gogol-almaty-kazakhstan-0",
         "title": "Байтурсынов",
-        "category": ["Люди", "Писатели"],
+        "category": ["Люди", "Знаменитости"],
         "year": 0,
         "ratio": 1.33,
         "note": "",
@@ -302,7 +313,7 @@
       {
         "filename": "186_makataev-almaty-kazakhstan-0",
         "title": "Макатаев",
-        "category": ["Люди", "Писатели"],
+        "category": ["Люди", "Знаменитости"],
         "year": 2021,
         "ratio": 1.33,
         "note": "",
@@ -434,7 +445,7 @@
       {
         "filename": "140_kabanbay_batyr-almaty-kazakhstan-0",
         "title": "Димаш",
-        "category": ["Люди", "Артисты"],
+        "category": ["Люди", "Знаменитости"],
         "year": 0,
         "ratio": 1.33,
         "note": "", 
@@ -489,7 +500,7 @@
       {
         "filename": "111_abay-almaty-kazakhstan-0",
         "title": "20 тенге",
-        "category": ["Люди", "Писатели"],
+        "category": ["Люди", "Знаменитости"],
         "year": 0,
         "ratio": 1,
         "note": "", 
@@ -500,7 +511,7 @@
       {
         "filename": "38a_auezov-almaty-kazakhstan-0",
         "title": "Дали",
-        "category": ["Люди", "Артисты"],
+        "category": ["Люди", "Знаменитости"],
         "year": 2015,
         "ratio": 1.33,
         "note": "", 

@@ -3,6 +3,17 @@
     "title": "Kazakhstan",
     "images": [
       {
+        "filename": "54_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Animals", "Freehand", "Spray"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Gammacreates"],
+        "note": "",
+        "city": "Almaty",
+        "location": "54 Zhibek zholy avenue"
+      },
+      {
         "filename": "68_zhibek_zholy-almaty-kazakhstan-0",
         "title": "",
         "category": ["People"],
@@ -11,7 +22,7 @@
         "author": [],
         "note": "",
         "city": "Almaty",
-        "location": "68 Zhibek zholy street"
+        "location": "68 Zhibek zholy avenue"
       },
       {
         "filename": "59_zhibek_zholy-almaty-kazakhstan-0",
@@ -19,10 +30,10 @@
         "category": ["Animals", "Freehand", "Spray"],
         "year": 0,
         "ratio": 1,
-        "author": [],
+        "author": ["Gammacreates"],
         "note": "",
         "city": "Almaty",
-        "location": "59 Zhibek zholy street"
+        "location": "59 Zhibek zholy avenue"
       },
       {
         "filename": "33_valikhanov-almaty-kazakhstan-0",
@@ -30,7 +41,7 @@
         "category": ["Animals", "Freehand", "Spray"],
         "year": 0,
         "ratio": 1,
-        "author": [],
+        "author": ["Gammacreates"],
         "note": "",
         "city": "Almaty",
         "location": "33 Valikhanov street"
@@ -49,7 +60,7 @@
       {
         "filename": "55_karasai_batyr-almaty-kazakhstan-0",
         "title": "",
-        "category": [],
+        "category": ["Objects", "Animals", "People"],
         "year": 0,
         "ratio": 1.33,
         "author": [],
@@ -71,7 +82,7 @@
       {
         "filename": "36_baribayev-almaty-kazakhstan-2",
         "title": "",
-        "category": [],
+        "category": ["Mythical"],
         "year": 0,
         "ratio": 0.75,
         "author": [],
@@ -181,7 +192,7 @@
       {
         "filename": "16_dostyk-almaty-kazakhstan-0",
         "title": "Bukreyev",
-        "category": ["People", "Athletes"],
+        "category": ["People", "Celebrities"],
         "year": 2019,
         "ratio": 1,
         "note": "",
@@ -236,7 +247,7 @@
       {
         "filename": "101_panfilov-almaty-kazakhstan-0",
         "title": "Batyr",
-        "category": ["People", "Artists", "Writers"],
+        "category": ["People", "Celebrities"],
         "year": 0,
         "ratio": 0.75,
         "note": "",
@@ -247,7 +258,7 @@
       {
         "filename": "101_panfilov-almaty-kazakhstan-1",
         "title": "Batyr",
-        "category": ["People", "Artists", "Writers"],
+        "category": ["People", "Celebrities"],
         "year": 0,
         "ratio": 0.75,
         "note": "",
@@ -269,7 +280,7 @@
       {
         "filename": "125_tolebi-almaty-kazakhstan-0",
         "title": "",
-        "category": ["People", "Athletes"],
+        "category": ["People"],
         "year": 2016,
         "ratio": 1.33,
         "note": "", 
@@ -291,7 +302,7 @@
       {
         "filename": "153_gogol-almaty-kazakhstan-0",
         "title": "Baitursynov",
-        "category": ["People", "Writers"],
+        "category": ["People", "Celebrities"],
         "year": 0,
         "ratio": 1.33,
         "note": "",
@@ -302,7 +313,7 @@
       {
         "filename": "186_makataev-almaty-kazakhstan-0",
         "title": "Makataev",
-        "category": ["People", "Writers"],
+        "category": ["People", "Celebrities"],
         "year": 2021,
         "ratio": 1.33,
         "note": "",
@@ -434,7 +445,7 @@
       {
         "filename": "140_kabanbay_batyr-almaty-kazakhstan-0",
         "title": "Dimash",
-        "category": ["People", "Artists"],
+        "category": ["People", "Celebrities"],
         "year": 0,
         "ratio": 1.33, 
         "author": [],
@@ -489,7 +500,7 @@
       {
         "filename": "111_abay-almaty-kazakhstan-0",
         "title": "20 tenge",
-        "category": ["People", "Writers"],
+        "category": ["People", "Celebrities"],
         "year": 0,
         "ratio": 1,
         "note": "",
@@ -500,7 +511,7 @@
       {
         "filename": "38a_auezov-almaty-kazakhstan-0",
         "title": "Dali",
-        "category": ["People", "Artists"],
+        "category": ["People", "Celebrities"],
         "year": 2015,
         "ratio": 1.33,
         "note": "",

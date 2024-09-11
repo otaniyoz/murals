@@ -309,7 +309,13 @@ window.onload = () => {
         })  
       }
       if (!counter.textContent) {
-        counter.textContent = `${imageCount}`;
+        const imageCountString = `${imageCount}`;
+        counter.textContent = imageCountString;
+        for (const endDigits in hints['title'][lang]) {
+          if (endDigits.includes(imageCountString[imageCountString.length - 1])) {
+            title.childNodes[1].textContent = hints['title'][lang][endDigits];
+          }
+        }
         document.title = title.textContent;  
       }
       debounce(fitTextToWidth(title), waitDuration);
@@ -362,9 +368,12 @@ window.onload = () => {
         while (checkedCategories.length) checkedCategories.pop();
         while (navBar.children.length) navBar.children[0].remove();
         datafile = `data/${lang}.json`;
-        counter.remove();
-        title.innerHTML = `<span id="counter"></span>${hints['title'][lang]}`;
-        counter = document.getElementById('counter');
+        const imageCountString = counter.textContent;
+        for (const endDigits in hints['title'][lang]) {
+          if (endDigits.includes(imageCountString[imageCountString.length - 1])) {
+            title.childNodes[1].textContent = hints['title'][lang][endDigits];
+          }
+        }
         document.getElementById('contribution').textContent = hints['contribution'][lang];
         document.getElementById('contribution-link').href = hints['contribution-link'][lang];
         document.getElementById('signoff').textContent = hints['signoff'][lang];
@@ -390,7 +399,7 @@ window.onload = () => {
   let counter = document.getElementById('counter');
   const title = document.getElementById('title');
   const hints = {
-    'title': {'en': ' ⁠murals', 'ru': ' ⁠мурала'},
+    'title': {'en': {'1': ' ⁠mural', '234567890': ' ⁠murals'}, 'ru': {'1': ' ⁠мурал', '234': ' ⁠мурала', '567890': ' ⁠муралов'}},
     'contribution': {'en': 'About', 'ru': 'О проекте'},
     'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'},
     'signoff': {'en': 'Designed and\u00A0developed by\u00A0Otaniyoz in\u00A02024', 'ru': 'Задизайнил и\u00A0разработал Отаниёз в\u00A02024'}

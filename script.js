@@ -296,6 +296,7 @@ window.onload = () => {
       if (navBar.children.length !== 2*(categories.length + authors.length + countries.length + cities.length + years.length) + 4) {
         const delimiter = document.createElement('p');
         delimiter.textContent = '|';
+        delimiter.classList.add('selector-delimiter');
         populateWithSelectors(authors, navBar, delimiter);
         populateWithSelectors(categories, navBar, delimiter);
         populateWithSelectors(countries, navBar, delimiter);

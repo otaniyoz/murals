@@ -144,6 +144,9 @@ svg {
   fill: var(--text-secondary);
   color: var(--text-secondary);
 }
+.selector-delimiter {
+  color: var(--text-secondary);
+}
 .image-placeholder {
   z-index: -12;
   position: absolute;

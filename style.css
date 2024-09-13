@@ -40,7 +40,7 @@ body {
 }
 header {
   overflow: visible;
-  padding: 1vmin 0 4vmax 0;
+  padding: 1vmin 0 2vmax 0;
 }
 nav {
   z-index: 12;
@@ -53,14 +53,13 @@ h1 {
   z-index: -12;
   display: block;
   overflow: visible;
-  margin-left: -1vw;
   line-height: 0.8em;
   width: fit-content;
   position: relative;
-  margin-top: -2vmax;
   white-space: nowrap;
   font-family: "Comforter";
-  padding: 1vmax 1vw 1vmin 1vw;
+  padding: 1vmax 1vw 0 1vw;
+  margin: -1vmax 0 -1vmax -1vw;
   color: var(--text-accent-main);
 }
 body {

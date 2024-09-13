@@ -249,6 +249,7 @@ window.onload = () => {
             img.setAttribute('data-author', image.author);
             img.setAttribute('data-country', data[key].title);
             img.setAttribute('data-location', image.location);
+
             imageTags.push(image.city);
             imageTags.push(`${image.year}`);
             imageTags.push(data[key].title);
@@ -260,13 +261,13 @@ window.onload = () => {
             }
             for (let author of image.author) {
               imageTags.push(author);
-              if (categories.indexOf(author) === -1) {
-                categories.push(author);
+              if (authors.indexOf(author) === -1) {
+                authors.push(author);
               }
             }
-            if (categories.indexOf(data[key].title) === -1) categories.push(data[key].title);
-            if (categories.indexOf(`${image.year}`) === -1 && image.year !== 0) categories.push(`${image.year}`);
-            if (categories.indexOf(image.city) === -1) categories.push(image.city);
+            if (countries.indexOf(data[key].title) === -1) countries.push(data[key].title);
+            if (years.indexOf(`${image.year}`) === -1 && image.year !== 0) years.push(`${image.year}`);
+            if (cities.indexOf(image.city) === -1) cities.push(image.city);
 
             if (!checkedCategories.length || checkedCategories.every(v => imageTags.includes(v))) {
               const imageDimensions = getColumnImageDimensions(image.ratio, columns);
@@ -292,21 +293,14 @@ window.onload = () => {
         }
       }
 
-      if (navBar.children.length !== 2*categories.length) {
-        categories.sort();
-        categories.forEach((category) => {
-          let selectorLabel = document.createElement('label');
-          let selector = document.createElement('input');
-          selector.id = category;
-          selector.value = category;
-          selector.type = 'checkbox';
-          selectorLabel.htmlFor = category;
-          selector.name = 'category-selector';
-          selectorLabel.textContent = category;
-          selector.addEventListener('change', filterImages);
-          navBar.appendChild(selector);
-          navBar.appendChild(selectorLabel);
-        })  
+      if (navBar.children.length !== 2*(categories.length + authors.length + countries.length + cities.length + years.length) + 4) {
+        const delimiter = document.createElement('p');
+        delimiter.textContent = '|';
+        populateWithSelectors(authors, navBar, delimiter);
+        populateWithSelectors(categories, navBar, delimiter);
+        populateWithSelectors(countries, navBar, delimiter);
+        populateWithSelectors(cities, navBar, delimiter);
+        populateWithSelectors(years, navBar);        
       }
       if (!counter.textContent) {
         const imageCountString = `${imageCount}`;
@@ -321,6 +315,24 @@ window.onload = () => {
       debounce(fitTextToWidth(title), waitDuration);
       document.getElementsByTagName('footer')[0].style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
     }).catch(error => console.error('Error fetching JSON:', error));
+  }
+
+  function populateWithSelectors(targetCategories, targetContainer, delimiter) {
+    targetCategories.sort();
+    targetCategories.forEach((category) => {
+      let selectorLabel = document.createElement('label');
+      let selector = document.createElement('input');
+      selector.id = category;
+      selector.value = category;
+      selector.type = 'checkbox';
+      selectorLabel.htmlFor = category;
+      selector.name = 'category-selector';
+      selectorLabel.textContent = category;
+      selector.addEventListener('change', filterImages);
+      targetContainer.appendChild(selector);
+      targetContainer.appendChild(selectorLabel);
+    });
+    if (delimiter) targetContainer.appendChild(delimiter.cloneNode(true));
   }
 
   function filterImages(event) {
@@ -364,6 +376,10 @@ window.onload = () => {
       if (radio.checked && radio.value !== lang) {
         lang = radio.value;
         localStorage.setItem('murals-lang', lang);
+        while (years.length) years.pop();
+        while (cities.length) cities.pop();
+        while (authors.length) authors.pop();
+        while (countries.length) countries.pop();
         while (categories.length) categories.pop();
         while (checkedCategories.length) checkedCategories.pop();
         while (navBar.children.length) navBar.children[0].remove();
@@ -388,6 +404,10 @@ window.onload = () => {
   let lang = 'en';
   let timeoutId = null;
   const categories = [];
+  const authors = [];
+  const years = [];
+  const countries = [];
+  const cities = [];
   let curtainYOffset = 0;
   let imageFileNames = [];
   const waitDuration = 450;

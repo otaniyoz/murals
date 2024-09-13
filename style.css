@@ -48,6 +48,7 @@ nav {
   position: relative;
   flex-flow: row wrap;
   padding-bottom: 1vmax;
+  align-items: baseline;
 }
 h1 {
   z-index: -12;

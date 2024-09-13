@@ -104,10 +104,10 @@ img.loaded {
 }
 label {
   font-size: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
-  border: 1px solid var(--text-secondary);
-  background: var(--background-main);
+  border: 1px solid transparent;
   font-family: "IBM Plex Sans";
-  padding: 1vmin 1.5vmax;
+  background: transparent;
+  padding: 0.5vmin 1vmax;
   border-radius: 16vmax;
   margin: 1vmin 0.5vmin;
   align-content: center;
@@ -134,7 +134,7 @@ input[type="radio"]:checked+label {
 }
 label:hover {
   transition: 0s;
-  border-color: var(--text-accent-secondary);
+  border: 1px solid var(--text-accent-secondary);
 }
 svg {
   width: 4vh;

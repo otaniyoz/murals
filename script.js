@@ -58,8 +58,7 @@ window.onload = () => {
     const imageDescriptionContainer = modal.children[0];
     imageDescription.id = 'curtain';
     imageDescription.classList.add('image-description');
-    imageDescriptionContainer.appendChild(image);
-    imageDescriptionContainer.appendChild(imageDescription);
+    imageDescriptionContainer.append(image, imageDescription);
     modal.addEventListener('pointerdown', hideModal);
     closeButton.addEventListener('pointerdown', hideModal);
     rightButton.addEventListener('pointerdown', nextImage);
@@ -225,12 +224,14 @@ window.onload = () => {
     imageFileNames = [];
     fetch(datafile).then(response => response.json()).then(data => {
       while (children.length) children[0].remove();
+      const cols = [];
       for (let i = 0; i < columns; i++) {
         const col = document.createElement('div');
         col.classList.add('col');
-        col.id = `col-${i}`
-        muralsContainer.appendChild(col);
+        col.id = `col-${i}`;
+        cols.push(col);
       }
+      muralsContainer.append(...cols);
       for (let key in data) {
         if (data.hasOwnProperty(key)) {
           data[key].images.forEach((image, i) => {
@@ -284,8 +285,7 @@ window.onload = () => {
               img.addEventListener('click', showModal);
               img.addEventListener('load', handleLoadedImage, { once: true });
               imageFileNames.push(image.filename);
-              picture.appendChild(placeholder);
-              picture.appendChild(img);
+              picture.append(placeholder, img);
               col.appendChild(picture);
               imageCount++;
             }
@@ -319,6 +319,7 @@ window.onload = () => {
   }
 
   function populateWithSelectors(targetCategories, targetContainer, delimiter) {
+    const selectors = [];
     targetCategories.sort();
     targetCategories.forEach((category) => {
       let selectorLabel = document.createElement('label');
@@ -330,9 +331,9 @@ window.onload = () => {
       selector.name = 'category-selector';
       selectorLabel.textContent = category;
       selector.addEventListener('change', filterImages);
-      targetContainer.appendChild(selector);
-      targetContainer.appendChild(selectorLabel);
+      selectors.push(selector, selectorLabel);
     });
+    targetContainer.append(...selectors);
     if (delimiter) targetContainer.appendChild(delimiter.cloneNode(true));
   }
 
@@ -377,12 +378,12 @@ window.onload = () => {
       if (radio.checked && radio.value !== lang) {
         lang = radio.value;
         localStorage.setItem('murals-lang', lang);
-        while (years.length) years.pop();
-        while (cities.length) cities.pop();
-        while (authors.length) authors.pop();
-        while (countries.length) countries.pop();
-        while (categories.length) categories.pop();
-        while (checkedCategories.length) checkedCategories.pop();
+        years.length = 0;
+        cities.length = 0;
+        authors.length = 0;
+        countries.length = 0;
+        categories.length = 0;
+        checkedCategories.length = 0;
         while (navBar.children.length) navBar.children[0].remove();
         datafile = `data/${lang}.json`;
         const imageCountString = counter.textContent;
@@ -391,11 +392,11 @@ window.onload = () => {
             title.childNodes[1].textContent = hints['title'][lang][endDigits];
           }
         }
+        document.title = title.textContent;
         document.getElementById('contribution').textContent = hints['contribution'][lang];
         document.getElementById('contribution-link').href = hints['contribution-link'][lang];
         document.getElementById('signoff').textContent = hints['signoff'][lang];
         buildGallery();
-        document.title = title.textContent;
       }
     });
   }
@@ -430,9 +431,6 @@ window.onload = () => {
     lang = localStorage.getItem('murals-lang');
     datafile = `data/${lang}.json`;
     document.getElementById(lang).checked = true;
-    counter.remove();
-    title.innerHTML = `<span id="counter"></span>${hints['title'][lang]}`;
-    counter = document.getElementById('counter');
     document.getElementById('contribution').textContent = hints['contribution'][lang];
     document.getElementById('contribution-link').href = hints['contribution-link'][lang];
     document.getElementById('signoff').textContent = hints['signoff'][lang];

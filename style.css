@@ -88,7 +88,7 @@ a {
   text-decoration-color: var(--text-secondary);
 }
 a:hover {
-  transition: 0s;
+  transition: 0;
   text-decoration-color: var(--text-accent-secondary);
 }
 picture {
@@ -115,7 +115,6 @@ label {
   transition: 0.5s;
   font-weight: 700;
   min-height: 32px;
-  min-width: 64px;
   cursor: pointer;
 }
 input[type="radio"],
@@ -123,17 +122,17 @@ input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"]:checked+label {
-  transition: 0s;
+  transition: 0;
   color: var(--background-main);
   background: var(--text-accent-secondary);
   border-color: var(--text-accent-secondary);
 }
 input[type="radio"]:checked+label {
-  transition: 0s;
+  transition: 0;
   color: var(--text-accent-secondary);
 }
 label:hover {
-  transition: 0s;
+  transition: 0;
   border: 1px solid var(--text-accent-secondary);
 }
 svg {

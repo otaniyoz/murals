@@ -13,8 +13,9 @@
   const authors = [];
   const countries = [];
   const categories = [];
-  const waitDuration = 150;
   const imageFileNames = [];
+  const longWaitDuration = 3500;
+  const shortWaitDuration = 185;
   const title = document.getElementById('title');
   const modal = document.getElementById('modal');
   const footer = document.getElementById('footer');
@@ -35,8 +36,9 @@
   }
 
   function init() {
-    if (localStorage.getItem('murals-lang') && localStorage.getItem('murals-lang') !== lang) {
-      lang = localStorage.getItem('murals-lang');
+    const userLang = localStorage.getItem('murals-lang');
+    if (userLang && userLang !== lang) {
+      lang = userLang;
       datafile = `data/${lang}.json`;
       document.getElementById(lang).checked = true;
       contribution.textContent = hints['contribution'][lang];
@@ -74,7 +76,7 @@
 
     window.onload = () => {
       window.addEventListener('resize', () => {
-        debounce(resizePage(), waitDuration);
+        debounce(resizePage(), shortWaitDuration);
       });
     };
 
@@ -88,6 +90,9 @@
     const dimensions = getWindowDimensions();
     const children = muralsContainer.children;
     const categoryInputs = document.getElementsByName('category-selector');
+    const placeholderTemplate = document.createElement('div');
+    placeholderTemplate.innerHTML = `<svg class="loading-roundbar" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.0 32.5C18.24 32.5 16.5 32.13 14.9 31.41C13.29 30.69 11.86 29.64 10.68 28.33L12.55 26.67C13.66 27.91 15.06 28.86 16.63 29.42C18.21 29.98 19.89 30.14 21.54 29.88C23.19 29.62 24.75 28.96 26.07 27.95C27.4 26.93 28.45 25.61 29.13 24.08C29.81 22.56 30.1 20.89 29.97 19.23C29.84 17.56 29.3 15.96 28.39 14.56C27.48 13.16 26.24 12.01 24.78 11.21C23.31 10.42 21.67 10.0 20.0 10.0V7.5C23.32 7.5 26.49 8.82 28.84 11.16C31.18 13.51 32.5 16.68 32.5 20.0C32.5 23.32 31.18 26.49 28.84 28.84C26.49 31.18 23.32 32.5 20.0 32.5Z" fill="var(--text-secondary)"/></svg>`;
+    placeholderTemplate.classList.add('image-placeholder');
     breakPoints.forEach((bp, i) => {
       if (dimensions.w >= bp[0] && dimensions.w <= bp[1]) columns = i + 1;
     });
@@ -141,10 +146,8 @@
 
             if (!checkedCategories.length || checkedCategories.every(v => imageTags.includes(v))) {
               const imageDimensions = getColumnImageDimensions(image.ratio, columns);
-              const placeholder = document.createElement('div');
+              const placeholder = placeholderTemplate.cloneNode(true);
               placeholder.id = `${img.id}-placeholder`;
-              placeholder.innerHTML = `<svg class="loading-roundbar" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.0 32.5C18.24 32.5 16.5 32.13 14.9 31.41C13.29 30.69 11.86 29.64 10.68 28.33L12.55 26.67C13.66 27.91 15.06 28.86 16.63 29.42C18.21 29.98 19.89 30.14 21.54 29.88C23.19 29.62 24.75 28.96 26.07 27.95C27.4 26.93 28.45 25.61 29.13 24.08C29.81 22.56 30.1 20.89 29.97 19.23C29.84 17.56 29.3 15.96 28.39 14.56C27.48 13.16 26.24 12.01 24.78 11.21C23.31 10.42 21.67 10.0 20.0 10.0V7.5C23.32 7.5 26.49 8.82 28.84 11.16C31.18 13.51 32.5 16.68 32.5 20.0C32.5 23.32 31.18 26.49 28.84 28.84C26.49 31.18 23.32 32.5 20.0 32.5Z" fill="var(--text-secondary)"/></svg>`;
-              placeholder.classList.add('image-placeholder');
               placeholder.style.height = `${imageDimensions.h}px`;
               placeholder.style.width = `${imageDimensions.w}px`;
               picture.style.height = `${imageDimensions.h}px`;
@@ -180,10 +183,12 @@
             title.childNodes[1].textContent = hints['title'][lang][endDigits];
           }
         }
-        document.title = title.textContent;  
+        document.title = title.textContent; 
       }
-      debounce(fitTextToWidth(title), waitDuration);
       footer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+      document.fonts.ready.then(() => {
+        fitTextToWidth(title);
+      });
     }).catch(error => console.error('Error fetching JSON:', error));
   }
 
@@ -466,8 +471,8 @@
       selector.addEventListener('change', filterImages);
       selectors.push(selector, selectorLabel);
     });
+    if (delimiter) selectors.push(delimiter.cloneNode(true));
     targetContainer.append(...selectors);
-    if (delimiter) targetContainer.appendChild(delimiter.cloneNode(true));
   }
 
   function filterImages(event) {

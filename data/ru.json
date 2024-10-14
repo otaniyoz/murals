@@ -3,14 +3,211 @@
     "title": "Казахстан",
     "images": [
       {
-        "filename": "54_zhibek_zholy-almaty-kazakhstan-0",
+        "filename": "140_gogol-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Животные", "От руки", "Балончик"],
+        "category": ["Животные", "Граффити"],
         "year": 0,
         "ratio": 1,
         "author": ["Гаммакриэйтс"],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Гоголя 140"
+      },
+      {
+        "filename": "159_baitursynov-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Животные", "Граффити"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Гаммакриэйтс"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Байтурсынова 159"
+      },
+      {
+        "filename": "71_kabanbay_batyr-almaty-kazakhstan-1",
+        "title": "Потехи ради",
+        "category": ["Животные", "Люди", "Предметы", "Постер"],
+        "year": 0,
+        "ratio": 0.42,
+        "author": ["Лео Чин"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Кабанбай батыра 71"
+      },
+      {
+        "filename": "128_baitursynov-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Животные", "Граффити"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Гаммакриэйтс"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Байтурсынова 128"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-7",
+        "title": "",
+        "category": ["Люди", "Предметы"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Андрей Репас"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-6",
+        "title": "",
+        "category": [],
+        "year": 2023,
+        "ratio": 0.40,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-5",
+        "title": "",
+        "category": ["Люди", "Предметы"],
+        "year": 2023,
+        "ratio": 0.37,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-4",
+        "title": "",
+        "category": ["Граффити"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Репас"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-3",
+        "title": "",
+        "category": [],
+        "year": 2023,
+        "ratio": 0.58,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-2",
+        "title": "",
+        "category": [],
+        "year": 2023,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "58_gogol-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Люди", "Мифическое", "Знаменитости"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Репас"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Гоголя 58"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-1",
+        "title": "Ою",
+        "category": ["Граффити"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Алпамыс Батыр", "Гаммакриэйтс"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-0",
+        "title": "Королева",
+        "category": ["Предметы", "Граффити", "Абстракция"],
+        "year": 2023,
+        "ratio": 0.27,
+        "author": ["Арина Солв"],
+        "note": "",
+        "city": "Алматы",
+        "censored": true,
+        "removed": false,
+        "location": "Проспект Достык 535"
+      },
+      {
+        "filename": "17_baribayev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Граффити"],
+        "year": 2021,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Барибаева 17"
+      },
+      {
+        "filename": "59_zhibek_zholy-almaty-kazakhstan-1",
+        "title": "",
+        "category": ["Граффити"],
+        "year": 2019,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Проспект Жибек жолы 59"
+      },
+      {
+        "filename": "54_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Животные", "Граффити"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Гаммакриэйтс"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Проспект Жибек жолы 54"
       },
       {
@@ -22,28 +219,34 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Проспект Жибек жолы 68"
       },
       {
         "filename": "59_zhibek_zholy-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Животные", "От руки", "Балончик"],
+        "category": ["Животные", "Граффити"],
         "year": 0,
         "ratio": 1,
         "author": ["Гаммакриэйтс"],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": true,
         "location": "Проспект Жибек жолы 59"
       },
       {
         "filename": "33_valikhanov-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Животные", "От руки", "Балончик"],
+        "category": ["Животные", "Граффити"],
         "year": 0,
         "ratio": 1,
         "author": ["Гаммакриэйтс"],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Валиханова 33"
       },
       {
@@ -55,6 +258,8 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Панфилова 110"
       },
       {
@@ -66,6 +271,8 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Карасай батыра 55"
       },
       {
@@ -77,6 +284,8 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Барибаева 36"
       },
       {
@@ -88,6 +297,8 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Барибаева 36"
       },
       {
@@ -99,6 +310,8 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Барибаева 36"
       },
       {
@@ -110,7 +323,22 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Барибаева 36"
+      },
+      {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-3",
+        "title": "Ангел",
+        "category": ["Люди"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Голди"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Тимирязева 42, павильон 16"
       },
       {
         "filename": "42_16_timiryazev-almaty-kazakhstan-2",
@@ -121,6 +349,8 @@
         "author": ["Репас"],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Тимирязева 42, павильон 16"
       },
       {
@@ -129,20 +359,11 @@
         "category": ["Люди"],
         "year": 0,
         "ratio": 0.75,
-        "author": ["Репас"],
+        "author": [],
         "note": "",
         "city": "Алматы",
-        "location": "Тимирязева 42, павильон 16"
-      },
-      {
-        "filename": "42_16_timiryazev-almaty-kazakhstan-0",
-        "title": "",
-        "category": ["Люди"],
-        "year": 0,
-        "ratio": 0.75,
-        "author": ["Репас"],
-        "note": "",
-        "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Тимирязева 42, павильон 16"
       },
       {
@@ -154,17 +375,21 @@
         "author": [],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Желтоксан 144"
       },
       {
         "filename": "44_nazarbayev-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Балончик", "От руки"],
+        "category": ["Граффити"],
         "year": 0,
         "ratio": 0.75,
         "author": ["Репас"],
         "note": "",
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Проспект Назарбаева 44"
       },
       {
@@ -176,6 +401,8 @@
         "author": ["Паша Кас"],
         "note": "Котёнок и надпись «а давайте бояться вместе» — отсылка к котёнку по имени Гав, герою из одноимённой советской анимации. По сюжету, Гав знает, что бояться грозы нужно вместе.",
         "city": "Алматы",
+        "censored": true,
+        "removed": false,
         "location": "Кунаева 38"
       },
       {
@@ -186,7 +413,9 @@
         "ratio": 1,
         "note": "",
         "author": ["Рауан Нусуп", "Жумадиль Елюкенев"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Кабанбай батыра 71"
       },
       {
@@ -197,7 +426,9 @@
         "ratio": 1,
         "note": "",
         "author": ["Гафура Каирбекова"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Проспект Достык 16"
       },
       {
@@ -209,6 +440,8 @@
         "note": "", 
         "author": ["Александр Благий"],
         "city": "Алматы",
+        "censored": false,
+        "removed": false,
         "location": "Курмангазы 31"
       },
       {
@@ -219,7 +452,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": ["Репас"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Курмангазы 31"
       },
       {
@@ -230,7 +465,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Степан «310» Краснов"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Курмангазы 33"
       },
       {
@@ -241,7 +478,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Неоновый шаман"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Проспект Абылай хана 59"
       },
       {
@@ -252,7 +491,9 @@
         "ratio": 0.75,
         "author": [],
         "note": "",
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Панфилова 101"
       },
       {
@@ -263,7 +504,9 @@
         "ratio": 0.75,
         "author": [],
         "note": "",
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Панфилова 101"
       },
       {
@@ -274,7 +517,9 @@
         "ratio": 1.33,
         "author": [],
         "note": "",
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Шевченко 97"
       },
       {
@@ -285,7 +530,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Репас"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Толе би 125"
       },
       {
@@ -296,7 +543,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Репас"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Толе би 125"
       },
       {
@@ -307,7 +556,9 @@
         "ratio": 1.33,
         "note": "",
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Гоголя 153"
       },
       {
@@ -318,7 +569,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Нурболат Аманкуль", "Абай Султан"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Макатаева 186"
       },
       {
@@ -329,7 +582,9 @@
         "ratio": 1,
         "note": "",
         "author": ["Нурболат Аманкуль", "Кенес Бекболат", "Мухит Дулу"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Проспект Назарбаева 118"
       },
       {
@@ -340,7 +595,9 @@
         "ratio": 0.75, 
         "author": [],
         "note": "",
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Проспект Назарбаева 145"
       },
       {
@@ -351,7 +608,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Константин «Змогк» Данилов"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Кожамкулова 202"
       },
       {
@@ -362,18 +621,22 @@
         "ratio": 1.33,
         "note": "", 
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Валиханова 122"
       },
       {
         "filename": "127_pushkin-almaty-kazakhstan-0",
         "title": "КЗ",
-        "category": ["От руки", "Балончик"],
+        "category": ["Тромплей"],
         "year": 2017,
         "ratio": 1,
         "note": "",
         "author": ["Джей Фанакапан"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Пушкина 127"
       },
       {
@@ -384,7 +647,9 @@
         "author": [],
         "ratio": 0.75,
         "note": "",
-        "city": "Алматы",  
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,  
         "location": "Пушкина 88"
       },
       {
@@ -395,7 +660,9 @@
         "ratio": 0.56,
         "note": "", 
         "author": ["Репас"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Шевченко 41"
       },
       {
@@ -406,7 +673,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Айманова 122"
       },
       {
@@ -417,7 +686,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": ["Мухит Дулу"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Желтоксан 88"
       },
       {
@@ -428,7 +699,9 @@
         "ratio": 1.33,
         "note": "",
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Макатаева 53"
       },
       {
@@ -439,7 +712,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": ["Репас"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Кабанбай батыра 55"
       },
       {
@@ -450,7 +725,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Кабанбай батыра 140"
       },
       {
@@ -461,7 +738,9 @@
         "ratio": 1,
         "note": "", 
         "author": ["Сауле Сулейменова", "Куаныш Базаргалиев"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Кабанбай батыра 140"
       },
       {
@@ -472,7 +751,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": ["Рауан Нусуп", "Жумадиль Елюкенев"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Курмангазы 112"
       },
       {
@@ -483,7 +764,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": ["Джохар Юнусов", "Тамара Елфимова"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Чокина 183"
       },
       {
@@ -494,7 +777,9 @@
         "ratio": 1,
         "note": "", 
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Маметова 78"
       },
       {
@@ -505,7 +790,9 @@
         "ratio": 1,
         "note": "", 
         "author": [],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Проспект Абая 111"
       },
       {
@@ -516,7 +803,9 @@
         "ratio": 1.33,
         "note": "", 
         "author": ["Марина Зуми"],
-        "city": "Алматы", 
+        "city": "Алматы",
+        "censored": false,
+        "removed": false, 
         "location": "Ауэзова 38a"
       }
     ]

@@ -3,14 +3,211 @@
     "title": "Kazakhstan",
     "images": [
       {
-        "filename": "54_zhibek_zholy-almaty-kazakhstan-0",
+        "filename": "140_gogol-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Animals", "Freehand", "Spray"],
+        "category": ["Animals", "Graffiti"],
         "year": 0,
         "ratio": 1,
         "author": ["Gammacreates"],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "140 Gogol street"
+      },
+      {
+        "filename": "159_baitursynov-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Animals", "Graffiti"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Gammacreates"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "159 Baitursynov street"
+      },
+      {
+        "filename": "71_kabanbay_batyr-almaty-kazakhstan-1",
+        "title": "For the fun of it",
+        "category": ["Animals", "People", "Objects", "Poster"],
+        "year": 2023,
+        "ratio": 0.42,
+        "author": ["Leo Chin"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "71 Kabanbay batyr street"
+      },
+      {
+        "filename": "128_baitursynov-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Animals", "Graffiti"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Gammacreates"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "128 Baitursynov street"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-7",
+        "title": "",
+        "category": ["People", "Objects"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Andrew Repas"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-6",
+        "title": "",
+        "category": [],
+        "year": 2023,
+        "ratio": 0.40,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-5",
+        "title": "",
+        "category": ["People", "Objects"],
+        "year": 2023,
+        "ratio": 0.37,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-4",
+        "title": "",
+        "category": ["Graffiti"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Repas"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-3",
+        "title": "",
+        "category": [],
+        "year": 2023,
+        "ratio": 0.58,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-2",
+        "title": "",
+        "category": [],
+        "year": 2023,
+        "ratio": 1,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "58_gogol-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["People", "Mythical", "Celebrities"],
+        "year": 0,
+        "ratio": 0.75,
+        "author": ["Repas"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "58 Gogol street"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-1",
+        "title": "Oyu",
+        "category": ["Graffiti"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Alpamys Batyr", "Gammacreates"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-0",
+        "title": "Queen",
+        "category": ["Objects", "Graffiti", "Abstract"],
+        "year": 2023,
+        "ratio": 0.27,
+        "author": ["Arina Solve"],
+        "note": "",
+        "city": "Almaty",
+        "censored": true,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "17_baribayev-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Graffiti"],
+        "year": 2021,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "17 Baribayev street"
+      },
+      {
+        "filename": "59_zhibek_zholy-almaty-kazakhstan-1",
+        "title": "",
+        "category": ["Graffiti"],
+        "year": 2019,
+        "ratio": 0.75,
+        "author": [],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "59 Zhibek zholy avenue"
+      },
+      {
+        "filename": "54_zhibek_zholy-almaty-kazakhstan-0",
+        "title": "",
+        "category": ["Animals", "Graffiti"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Gammacreates"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "54 Zhibek zholy avenue"
       },
       {
@@ -22,28 +219,34 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "68 Zhibek zholy avenue"
       },
       {
         "filename": "59_zhibek_zholy-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Animals", "Freehand", "Spray"],
+        "category": ["Animals", "Graffiti"],
         "year": 0,
         "ratio": 1,
         "author": ["Gammacreates"],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": true,
         "location": "59 Zhibek zholy avenue"
       },
       {
         "filename": "33_valikhanov-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Animals", "Freehand", "Spray"],
+        "category": ["Animals", "Graffiti"],
         "year": 0,
         "ratio": 1,
         "author": ["Gammacreates"],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "33 Valikhanov street"
       },
       {
@@ -55,6 +258,8 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "110 Panfilov street"
       },
       {
@@ -66,6 +271,8 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "55 Karasai batyr street"
       },
       {
@@ -77,6 +284,8 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "36 Baribayev street"
       },
       {
@@ -88,6 +297,8 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "36 Baribayev street"
       },
       {
@@ -99,6 +310,8 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "36 Baribayev street"
       },
       {
@@ -110,7 +323,22 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "36 Baribayev street"
+      },
+      {
+        "filename": "42_16_timiryazev-almaty-kazakhstan-3",
+        "title": "Angel",
+        "category": ["People"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Goldy"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "42 Timiryazeva street, hall 16"
       },
       {
         "filename": "42_16_timiryazev-almaty-kazakhstan-2",
@@ -121,6 +349,8 @@
         "author": ["Repas"],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "42 Timiryazeva street, hall 16"
       },
       {
@@ -129,20 +359,11 @@
         "category": ["People"],
         "year": 0,
         "ratio": 0.75,
-        "author": ["Repas"],
+        "author": [],
         "note": "",
         "city": "Almaty",
-        "location": "42 Timiryazeva street, hall 16"
-      },
-      {
-        "filename": "42_16_timiryazev-almaty-kazakhstan-0",
-        "title": "",
-        "category": ["People"],
-        "year": 0,
-        "ratio": 0.75,
-        "author": ["Repas"],
-        "note": "",
-        "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "42 Timiryazeva street, hall 16"
       },
       {
@@ -154,17 +375,21 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "144 Zheltoksan street"
       },
       {
         "filename": "44_nazarbayev-almaty-kazakhstan-0",
         "title": "",
-        "category": ["Spray", "Freehand"],
+        "category": ["Graffiti"],
         "year": 0,
         "ratio": 0.75,
         "author": ["Repas"],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "44 Nazarbayev avenue"
       },
       {
@@ -173,9 +398,11 @@
         "category": ["Animals", "Characters"],
         "year": 2017,
         "ratio": 1.33,
-        "note": "The kitten and the inscription ‘a-let's be afraid together’ is a reference to a kitten named Woof, a character from the Soviet animation of the same name. In the story, Woof knows that we should be afraid of thunderstorms together.",
+        "note": "The kitten and the inscription ‘a-let’s be afraid together’ is a reference to a kitten named Woof, a character from the Soviet animation of the same name. In the story, Woof knows that we should be afraid of thunderstorms together.",
         "author": ["Pasha Kas"],
         "city": "Almaty",
+        "censored": true,
+        "removed": false,
         "location": "38 Kunayev street"
       },
       {
@@ -186,6 +413,8 @@
         "ratio": 1,
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Rauan Nusup", "Zhumadil Yelyukenev"],
         "location": "71 Kabanbay batyr street"
       },
@@ -197,6 +426,8 @@
         "ratio": 1,
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Gafura Kairbekova"],
         "location": "16 Dostyk avenue"
       },
@@ -208,6 +439,8 @@
         "ratio": 1.33,
         "note": "", 
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Alexander Blagyi"],
         "location": "31 Kurmangazy street"
       },
@@ -219,6 +452,8 @@
         "ratio": 1.33,
         "note": "", 
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Repas"],
         "location": "31 Kurmangazy street"
       },
@@ -231,6 +466,8 @@
         "note": "",
         "author": ["Stepan ‘310’ Krasnov"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "33 Kurmangazy street"
       },
       {
@@ -241,6 +478,8 @@
         "ratio": 1.33,
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Neon shaman"],
         "location": "59 Abylai khan avenue"
       },
@@ -253,6 +492,8 @@
         "note": "",
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "101 Panfilov street"
       },
       {
@@ -264,6 +505,8 @@
         "note": "",
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "101 Panfilov street"
       },
       {
@@ -275,6 +518,8 @@
         "note": "",
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "97 Shevchenko street"
       },
       {
@@ -286,6 +531,8 @@
         "note": "", 
         "author": ["Repas"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "125 Tole bi street"
       },
       {
@@ -297,6 +544,8 @@
         "note": "",
         "author": ["Repas"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "125 Tole bi street"
       },
       {
@@ -308,6 +557,8 @@
         "note": "",
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "153 Gogol street"
       },
       {
@@ -318,6 +569,8 @@
         "ratio": 1.33,
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Nurbolat Amankul", "Abai Sultan"],
         "location": "186 Makataev street"
       },
@@ -329,6 +582,8 @@
         "ratio": 1,
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Nurbolat Amankul", "Kenes Bekbolat", "Mukhit Dulu"],
         "location": "118 Nazarbayev avenue"
       },
@@ -341,6 +596,8 @@
         "note": "", 
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "145 Nazarbayev avenue"
       },
       {
@@ -352,6 +609,8 @@
         "note": "",
         "author": ["Konstantin ‘Zmogk’ Danilov"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "202 Kozhamkulov street"
       },
       {
@@ -363,17 +622,21 @@
         "note": "", 
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "122 Valikhanov street"
       },
       {
         "filename": "127_pushkin-almaty-kazakhstan-0",
         "title": "QZ",
-        "category": ["Freehand", "Spray"],
+        "category": ["Trompe l’oeil"],
         "year": 2017,
         "ratio": 1,
         "note": "",
         "author": ["Jay Fanakapan"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "127 Pushkin street"
       },
       {
@@ -384,7 +647,9 @@
         "note": "",
         "author": [],
         "ratio": 0.75,
-        "city": "Almaty", 
+        "city": "Almaty",
+        "censored": false,
+        "removed": false, 
         "location": "88 Pushkin street"
       },
       {
@@ -396,6 +661,8 @@
         "note": "", 
         "author": ["Repas"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "41 Shevchenko street"
       },
       {
@@ -407,6 +674,8 @@
         "note": "", 
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "122 Aimanov street"
       },
       {
@@ -417,6 +686,8 @@
         "ratio": 1.33,
         "note": "", 
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Mukhit Dulu"],
         "location": "88 Zheltoksan street"
       },
@@ -429,6 +700,8 @@
         "note": "", 
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "53 Makataev street"
       },
       {
@@ -440,6 +713,8 @@
         "note": "",
         "author": ["Repas"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "55 Kabanbay batyr street"
       },
       {
@@ -451,6 +726,8 @@
         "author": [],
         "note": "",
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "140 Kabanbay batyr street"
       },
       {
@@ -461,6 +738,8 @@
         "ratio": 1,
         "note": "", 
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Saule Suleimenova", "Kuanysh Bazargaliev"],
         "location": "140 Kabanbay batyr street"
       },
@@ -472,6 +751,8 @@
         "ratio": 1.33,
         "note": "", 
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "author": ["Rauan Nusup", "Zhumadil Yelyukenev"],
         "location": "112 Kurmangazy street"
       },
@@ -483,7 +764,9 @@
         "ratio": 1.33,
         "note": "",
         "author": ["Dzhokhar Yunusov", "Tamara Yelfimova"],
-        "city": "Almaty", 
+        "city": "Almaty",
+        "censored": false,
+        "removed": false, 
         "location": "183 Chokin street"
       },
       {
@@ -495,6 +778,8 @@
         "note": "", 
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "78 Mametova street"
       },
       {
@@ -506,6 +791,8 @@
         "note": "",
         "author": [],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "111 Abay avenue"
       },
       {
@@ -517,6 +804,8 @@
         "note": "",
         "author": ["Marina Zumi"],
         "city": "Almaty",
+        "censored": false,
+        "removed": false,
         "location": "38a Auezov street"
       }
     ]

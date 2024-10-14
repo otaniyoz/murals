@@ -152,6 +152,9 @@
               placeholder.style.width = `${imageDimensions.w}px`;
               picture.style.height = `${imageDimensions.h}px`;
               picture.style.width = `${imageDimensions.w}px`;
+              if (image.censored || image.removed) {
+                img.classList.add('wasted');
+              }
               img.style.height = `${imageDimensions.h}px`;
               img.style.width = `${imageDimensions.w}px`;
               img.addEventListener('click', showModal);

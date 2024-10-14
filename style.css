@@ -143,6 +143,9 @@ svg {
   fill: var(--text-secondary);
   color: var(--text-secondary);
 }
+.wasted {
+  filter: saturate(0%) brightness(0.5);
+}
 .selector-delimiter {
   color: var(--text-secondary);
 }

@@ -27,7 +27,7 @@
   const muralsContainer = document.getElementById('murals-container');
   const contributionLink = document.getElementById('contribution-link');
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,2559], [2560,10000]];
-  const hints = {'title': {'en': {'1': ' ⁠mural', '234567890': ' ⁠murals'}, 'ru': {'1': ' ⁠мурал', '234': ' ⁠мурала', '567890': ' ⁠муралов'}}, 'contribution': {'en': 'About', 'ru': 'О проекте'}, 'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}, 'signoff': {'en': 'Designed and\u00A0developed by\u00A0Otaniyoz in\u00A02024', 'ru': 'Задизайнил и\u00A0разработал Отаниёз в\u00A02024'}};
+  const hints = {'title': {'en': {'1': ' ⁠mural', '234567890': ' ⁠murals'}, 'ru': {'1': ' ⁠мурал', '234': ' ⁠мурала', '567890': ' ⁠муралов'}}, 'contribution': {'en': 'About', 'ru': 'О проекте'}, 'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}, 'signoff': {'en': 'Created by\u00A0Otaniyoz in\u00A02024', 'ru': 'Создал Отаниёз в\u00A02024'}};
 
   if (document.readyState !== 'loading') {
     init();
@@ -157,7 +157,7 @@
               }
               img.style.height = `${imageDimensions.h}px`;
               img.style.width = `${imageDimensions.w}px`;
-              img.addEventListener('click', showModal);
+              img.addEventListener('pointerdown', showModal);
               img.addEventListener('load', handleLoadedImage, { once: true });
               imageFileNames.push(image.filename);
               picture.append(placeholder, img);
@@ -301,16 +301,11 @@
   function handleKeyPress(event) {
     if (event.key === 'Escape') hideModal(event);
     else if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') nextImage(event);
-  }
-  
-  function scrollCurtain(event) {
-    const height = curtainYOffset - event.clientY;
-    const curtain = document.getElementById('curtain');
-    const baseHeight = parseFloat(window.getComputedStyle(curtain).height);
-    curtain.style.height = `${Math.max(baseHeight, 0.2*window.innerHeight) + height}px`;
-  }
+  } 
 
   function hideModal(event) {
+    event.stopPropagation();
+    event.preventDefault();
     // close modal when user clicked only on it and not on its children
     if ((event.type === 'pointerdown' && event.target === this) || event.type === 'keyup' || this.id === 'close') {
       modal.classList.add('hidden');
@@ -422,10 +417,18 @@
       document.addEventListener('pointerup', () => {
         document.removeEventListener('pointermove', scrollCurtain);
         // resetting image description height on pointerup so that it does not persist across images and stuff
-        imageDescriptionContainer[1].style.height = `${0.2*window.innerHeight}px`;
+        imageDescriptionContainer[1].style.height = `${0.15*window.innerHeight}px`;
       });
     });
     modal.classList.remove('hidden');
+  }
+
+  function scrollCurtain(event) {
+    const deltaY = curtainYOffset - event.clientY;
+    const curtain = document.getElementById('curtain');
+    const baseHeight = parseFloat(window.getComputedStyle(curtain).height);
+    curtain.style.height = `${baseHeight + deltaY}px`;
+    curtainYOffset = event.clientY;
   }
 
   function nextImage(event) {

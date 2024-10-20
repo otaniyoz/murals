@@ -3,6 +3,71 @@
     "title": "Kazakhstan",
     "images": [
       {
+        "filename": "535_dostyk-almaty-kazakhstan-17",
+        "title": "Tyurk and roll",
+        "category": ["People"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Mukhit Dulu"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-16",
+        "title": "Magpie",
+        "category": ["Animals"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["ACTK"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-15",
+        "title": "",
+        "category": ["People"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Rocko Sasha", "Kirill Raf"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-14",
+        "title": "",
+        "category": ["People", "Animals", "Poster", "Objects", "Graffiti"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Leo Chin"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
+        "filename": "535_dostyk-almaty-kazakhstan-13",
+        "title": "",
+        "category": ["People"],
+        "year": 2023,
+        "ratio": 0.56,
+        "author": ["Dammit"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "535 Dostyk avenue"
+      },
+      {
         "filename": "dostyk-almaty-kazakhstan-0",
         "title": "",
         "category": ["Animals", "Graffiti"],
@@ -389,7 +454,7 @@
         "note": "",
         "city": "Almaty",
         "censored": false,
-        "removed": false,
+        "removed": true,
         "location": "59 Zhibek zholy avenue"
       },
       {

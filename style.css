@@ -184,13 +184,13 @@ svg {
   min-width: fit-content;
 }
 .row {
-	gap: 2vmax;
+	gap: 1.5vmax;
 	display: flex;
 	flex-flow: row nowrap;
 }
 .col {
-	gap: 2vmax;
   width: 100%;
+	gap: 1.5vmax;
 	display: flex;
   overflow-y: hidden;
 	flex-flow: column nowrap;
@@ -249,10 +249,12 @@ svg {
 .image-description {
   bottom: 0;
   z-index: 24;
-  min-height: 20vh;
+  height: 15vh;
+  overflow: hidden;
+  user-select: none;
   margin-left: -4px;
   position: absolute;
-  padding: 2vmax 2vmin;
+  padding: 1vmax 2vmin;
   padding-bottom: 4vmax;
   background: var(--background-secondary);
 }

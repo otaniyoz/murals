@@ -274,7 +274,7 @@
         checkedCategories.length = 0;
         datafile = `data/${lang}.json`;
         localStorage.setItem('murals-lang', lang);
-        while (navBar.children.length) navBar.children[0].remove();
+        navBar.replaceChildren(showMoreLess);
         const imageCountString = counter.textContent;
         for (const endDigits in hints['title'][lang]) {
           if (endDigits.includes(imageCountString[imageCountString.length - 1])) {

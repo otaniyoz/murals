@@ -339,7 +339,7 @@
 
   function getColumnImageDimensions(imageRatio, columns) {
     const dimensions = getWindowDimensions();
-    const w = (dimensions.w - 4*dimensions.vmin - (columns - 1)*2*dimensions.vmax) / columns;
+    const w = (dimensions.w - 4*dimensions.vmin - (columns - 1)*1.5*dimensions.vmax) / columns;
     const h = imageRatio * w;
     return {w: w, h: h};
   }

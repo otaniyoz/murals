@@ -50,8 +50,8 @@ nav {
   flex-flow: row wrap;
   padding-bottom: 1vmax;
   align-items: baseline;
-  padding-right: clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem);
-  max-height: calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem)  + 1vmax + 1px);
+  height: calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem)  + 2.5vh + 1px);
+  padding-right: calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem) + 2.5vh + 1px);
 }
 h1 {
   z-index: -12;

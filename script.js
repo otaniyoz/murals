@@ -42,11 +42,11 @@
       localStorage.setItem('murals-less', selectorsLess);
     }
     if (selectorsLess === 'less') {
-      navBar.style.maxHeight = 'calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem)  + 1vmax + 1px)';
+      navBar.style.height = 'calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem)  + 2.5vh + 1px)';
       showMoreLess.style.transform = 'rotate(180deg)';
     }
     else {
-      navBar.style.maxHeight = 'fit-content';
+      navBar.style.height = 'fit-content';
       showMoreLess.style.transform = 'rotate(0deg)';
     }
   }

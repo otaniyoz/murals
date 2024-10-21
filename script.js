@@ -192,8 +192,7 @@
           });
         }
       }
-
-      if (navBar.children.length !== 2*(categories.length + authors.length + countries.length + cities.length + years.length) + 4 + 1) {
+      if (navBar.children.length !== (2*(categories.length + authors.length + countries.length + cities.length + years.length) + 4) + 1) {
         const delimiter = document.createElement('p');
         delimiter.classList.add('selector-delimiter');
         delimiter.textContent = '|';

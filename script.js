@@ -15,7 +15,6 @@
   const countries = [];
   const categories = [];
   const imageFileNames = [];
-  const longWaitDuration = 3500;
   const shortWaitDuration = 185;
   const title = document.getElementById('title');
   const modal = document.getElementById('modal');
@@ -182,7 +181,7 @@
               }
               img.style.height = `${imageDimensions.h}px`;
               img.style.width = `${imageDimensions.w}px`;
-              img.addEventListener('pointerdown', showModal);
+              img.addEventListener('click', showModal);
               img.addEventListener('load', handleLoadedImage, { once: true });
               imageFileNames.push(image.filename);
               picture.append(placeholder, img);
@@ -325,7 +324,7 @@
   function handleKeyPress(event) {
     if (event.key === 'Escape') hideModal(event);
     else if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') nextImage(event);
-  } 
+  }   
 
   function hideModal(event) {
     event.stopPropagation();
@@ -335,6 +334,14 @@
       modal.classList.add('hidden');
       document.removeEventListener('keypress', handleKeyPress);
       document.children[0].style.overflowY = 'scroll';
+      setTimeout(() => {
+        document.querySelectorAll('img').forEach((img) => {
+          img.style.pointerEvents = 'auto';
+        });
+        document.querySelectorAll('label').forEach((lbl) => {
+          lbl.style.pointerEvents = 'auto';
+        });
+      }, shortWaitDuration);
     }
   }
 
@@ -426,6 +433,12 @@
     const image = event.target;
     const imageDescriptionContainer = modal.children[0].children;
     const dimensions = getModalImageDimensions(image.dataset.ratio);
+    document.querySelectorAll('img').forEach((img) => {
+      img.style.pointerEvents = 'none';
+    });
+    document.querySelectorAll('label').forEach((lbl) => {
+      lbl.style.pointerEvents = 'none';
+    });
     imageDescriptionContainer[0].classList = 'loaded';
     imageDescriptionContainer[0].src = `images/${image.id}.jpg`;
     imageDescriptionContainer[0].setAttribute('data-src', image.id);

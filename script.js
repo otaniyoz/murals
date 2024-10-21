@@ -5,6 +5,7 @@
   let lang = 'en';
   let columns = 1;
   let curtainYOffset = 0;
+  let selectorsLess = 'less';
   let checkedCategories = [];
   let datafile = `data/${lang}.json`;
 
@@ -23,6 +24,7 @@
   const radios = document.getElementsByName('lang');
   const counter = document.getElementById('counter');
   const signoff = document.getElementById('signoff');
+  const showMoreLess = document.getElementById('moreless');
   const contribution = document.getElementById('contribution');
   const muralsContainer = document.getElementById('murals-container');
   const contributionLink = document.getElementById('contribution-link');
@@ -35,8 +37,31 @@
     document.addEventListener('DOMContentLoaded', init);
   }
 
+  function showSelectors(event) {
+    if (event !== undefined) {
+      selectorsLess = (selectorsLess === 'less') ? 'more' : 'less';
+      localStorage.setItem('murals-less', selectorsLess);
+    }
+    if (selectorsLess === 'less') {
+      navBar.style.maxHeight = 'calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem)  + 1vmax + 1px)';
+      showMoreLess.style.transform = 'rotate(180deg)';
+    }
+    else {
+      navBar.style.maxHeight = 'fit-content';
+      showMoreLess.style.transform = 'rotate(0deg)';
+    }
+  }
+
   function init() {
     const userLang = localStorage.getItem('murals-lang');
+    const userSelectorsLess = localStorage.getItem('murals-less');
+
+    showMoreLess.addEventListener('pointerdown', showSelectors);
+    if (userSelectorsLess !== null && userSelectorsLess !== selectorsLess) {
+      selectorsLess = localStorage.getItem('murals-less');
+      showSelectors();
+    }
+
     if (userLang && userLang !== lang) {
       lang = userLang;
       datafile = `data/${lang}.json`;
@@ -153,7 +178,7 @@
               picture.style.height = `${imageDimensions.h}px`;
               picture.style.width = `${imageDimensions.w}px`;
               if (image.censored || image.removed) {
-                img.classList.add('wasted');
+                img.classList.add('censored-removed');
               }
               img.style.height = `${imageDimensions.h}px`;
               img.style.width = `${imageDimensions.w}px`;
@@ -168,15 +193,15 @@
         }
       }
 
-      if (navBar.children.length !== 2*(categories.length + authors.length + countries.length + cities.length + years.length) + 4) {
+      if (navBar.children.length !== 2*(categories.length + authors.length + countries.length + cities.length + years.length) + 4 + 1) {
         const delimiter = document.createElement('p');
-        delimiter.textContent = '|';
         delimiter.classList.add('selector-delimiter');
+        delimiter.textContent = '|';
         populateWithSelectors(authors, navBar, delimiter);
         populateWithSelectors(categories, navBar, delimiter);
         populateWithSelectors(countries, navBar, delimiter);
         populateWithSelectors(cities, navBar, delimiter);
-        populateWithSelectors(years, navBar);        
+        populateWithSelectors(years, navBar);
       }
       if (!counter.textContent) {
         const imageCountString = `${imageCount}`;

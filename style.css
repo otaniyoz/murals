@@ -45,10 +45,13 @@ header {
 nav {
   z-index: 12;
   display: flex;
+  overflow: hidden;
   position: relative;
   flex-flow: row wrap;
   padding-bottom: 1vmax;
   align-items: baseline;
+  padding-right: clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem);
+  max-height: calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem)  + 1vmax + 1px);
 }
 h1 {
   z-index: -12;
@@ -136,14 +139,10 @@ label:hover {
   border: 1px solid var(--text-accent-secondary);
 }
 svg {
-  width: 4vh;
-  height: 4vh;
-  opacity: 0.3;
-  stroke: none;
-  fill: var(--text-secondary);
-  color: var(--text-secondary);
+  height: clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem);
+  aspect-ratio: 1 / 1;
 }
-.wasted {
+.censored-removed {
   filter: saturate(0%) brightness(0.5);
 }
 .selector-delimiter {
@@ -200,6 +199,8 @@ svg {
 }
 .icon-button {
   border: none;
+  stroke: none;
+  opacity: 0.3;
   height: 90vw;
   width: 12vmax;
   background: none;
@@ -207,6 +208,7 @@ svg {
   padding-inline: 0;
   position: absolute;
   top: calc(50vh - 49vw);
+  fill: var(--text-secondary);
 }
 #left {
   left: 0;
@@ -217,6 +219,21 @@ svg {
 #close {
   top: 2vmin;
   height: 12vmax;
+}
+#moreless {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  transition: 0.25s;
+  fill: var(--text-main);
+  transform: rotate(180deg);
+  margin: 0.5vmin calc(1vmax + 0.5vmin);
+}
+#moreless:hover {
+  transition: 0s;
+  fill: var(--text-accent-secondary);
 }
 .modal-container {
   top: 0;

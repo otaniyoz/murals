@@ -12,7 +12,7 @@
   font-weight: 400;
   font-display: swap;
   font-style: normal;
-  src: url("fonts/IBMPlexSans-Regular.woff") format("woff");
+  src: url("fonts/IBMPlexSans-Regular.woff2") format("woff2");
 }
 :root {
   color-scheme: light dark;
@@ -63,7 +63,7 @@ h1 {
   white-space: nowrap;
   font-family: "Comforter";
   padding: 1vmax 1vw 0 1vw;
-  margin: -1vmax 0 -1vmax -1vw;
+  margin: -2.5vmax 0 -2vmax -1vw;
   color: var(--text-accent-main);
 }
 body {
@@ -95,6 +95,7 @@ a:hover {
   text-decoration-color: var(--text-accent-secondary);
 }
 picture {
+  cursor: pointer;
   overflow: hidden;
 }
 img {

@@ -21,14 +21,13 @@
   const footer = document.getElementById('footer');
   const navBar = document.getElementById('nav-bar');
   const radios = document.getElementsByName('lang');
-  const counter = document.getElementById('counter');
   const signoff = document.getElementById('signoff');
   const showMoreLess = document.getElementById('moreless');
   const contribution = document.getElementById('contribution');
   const muralsContainer = document.getElementById('murals-container');
   const contributionLink = document.getElementById('contribution-link');
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,2559], [2560,10000]];
-  const hints = {'title': {'en': {'1': ' ⁠mural', '234567890': ' ⁠murals'}, 'ru': {'1': ' ⁠мурал', '234': ' ⁠мурала', '567890': ' ⁠муралов'}}, 'contribution': {'en': 'About', 'ru': 'О проекте'}, 'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}, 'signoff': {'en': 'Created by\u00A0Otaniyoz in\u00A02024', 'ru': 'Создал Отаниёз в\u00A02024'}};
+  const hints = {'title': {'en': 'Murals', 'ru': 'Муралы'}, 'contribution': {'en': 'About', 'ru': 'О проекте'}, 'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}, 'signoff': {'en': 'Created by\u00A0Otaniyoz in\u00A02024', 'ru': 'Сделал Отаниёз в\u00A02024'}};
 
   if (document.readyState !== 'loading') {
     init();
@@ -201,16 +200,8 @@
         populateWithSelectors(cities, navBar, delimiter);
         populateWithSelectors(years, navBar);
       }
-      if (!counter.textContent) {
-        const imageCountString = `${imageCount}`;
-        counter.textContent = imageCountString;
-        for (const endDigits in hints['title'][lang]) {
-          if (endDigits.includes(imageCountString[imageCountString.length - 1])) {
-            title.childNodes[1].textContent = hints['title'][lang][endDigits];
-          }
-        }
-        document.title = title.textContent; 
-      }
+      title.textContent = hints['title'][lang];
+      document.title = title.textContent;
       footer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
       document.fonts.ready.then(() => {
         fitTextToWidth(title);
@@ -275,12 +266,7 @@
         datafile = `data/${lang}.json`;
         localStorage.setItem('murals-lang', lang);
         navBar.replaceChildren(showMoreLess);
-        const imageCountString = counter.textContent;
-        for (const endDigits in hints['title'][lang]) {
-          if (endDigits.includes(imageCountString[imageCountString.length - 1])) {
-            title.childNodes[1].textContent = hints['title'][lang][endDigits];
-          }
-        }
+        title.textContent = hints['title'][lang];
         document.title = title.textContent;
         contribution.textContent = hints['contribution'][lang];
         contributionLink.href = hints['contribution-link'][lang];

@@ -3,6 +3,19 @@
     "title": "Kazakhstan",
     "images": [
       {
+        "filename": "esentai-almaty-kazakhstan-6",
+        "title": "",
+        "category": ["Animals", "Graffiti"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Gammacreates"],
+        "note": "",
+        "city": "Almaty",
+        "censored": false,
+        "removed": false,
+        "location": "Along the Esentai river"
+      },
+      {
         "filename": "535_dostyk-almaty-kazakhstan-17",
         "title": "Tyurk and roll",
         "category": ["People"],

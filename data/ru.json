@@ -3,6 +3,19 @@
     "title": "Казахстан",
     "images": [
       {
+        "filename": "esentai-almaty-kazakhstan-6",
+        "title": "",
+        "category": ["Животные", "Граффити"],
+        "year": 0,
+        "ratio": 1,
+        "author": ["Гаммакриэйтс"],
+        "note": "",
+        "city": "Алматы",
+        "censored": false,
+        "removed": false,
+        "location": "Вдоль реки Есентай"
+      },
+      {
         "filename": "535_dostyk-almaty-kazakhstan-17",
         "title": "Тюрк-н-ролл",
         "category": ["Люди"],

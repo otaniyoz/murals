@@ -61,14 +61,14 @@ h1 {
   width: fit-content;
   position: relative;
   white-space: nowrap;
+  margin: 0 0 -2vmax -1vw;
   font-family: "Comforter";
   padding: 1vmax 1vw 0 1vw;
-  margin: -2.5vmax 0 -2vmax -1vw;
   color: var(--text-accent-main);
 }
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 2vmin;
 	color: var(--text-main);
 	font-family: "IBM Plex Sans";

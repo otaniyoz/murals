@@ -23,11 +23,9 @@
   const radios = document.getElementsByName('lang');
   const signoff = document.getElementById('signoff');
   const showMoreLess = document.getElementById('moreless');
-  const contribution = document.getElementById('contribution');
   const muralsContainer = document.getElementById('murals-container');
-  const contributionLink = document.getElementById('contribution-link');
   const breakPoints = [[0,319], [320,767], [768,1023], [1024,2559], [2560,10000]];
-  const hints = {'title': {'en': 'Murals', 'ru': 'Муралы'}, 'contribution': {'en': 'About', 'ru': 'О проекте'}, 'contribution-link': {'en': 'https://github.com/otaniyoz/murals/blob/master/readme.md', 'ru': 'https://github.com/otaniyoz/murals/blob/master/readme_ru.md'}, 'signoff': {'en': 'Created by\u00A0Otaniyoz in\u00A02024', 'ru': 'Сделал Отаниёз в\u00A02024'}};
+  const hints = {'title': {'en': 'Murals', 'ru': 'Муралы'}, 'signoff': {'en': 'Created by\u00A0Otaniyoz in\u00A02024', 'ru': 'Сделал Отаниёз в\u00A02024'}};
 
   if (document.readyState !== 'loading') {
     init();
@@ -64,8 +62,6 @@
       lang = userLang;
       datafile = `data/${lang}.json`;
       document.getElementById(lang).checked = true;
-      contribution.textContent = hints['contribution'][lang];
-      contributionLink.href = hints['contribution-link'][lang];
       signoff.textContent = hints['signoff'][lang];
     }
 
@@ -268,8 +264,6 @@
         navBar.replaceChildren(showMoreLess);
         title.textContent = hints['title'][lang];
         document.title = title.textContent;
-        contribution.textContent = hints['contribution'][lang];
-        contributionLink.href = hints['contribution-link'][lang];
         signoff.textContent = hints['signoff'][lang];
         buildGallery();
       }

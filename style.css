@@ -61,9 +61,9 @@ h1 {
   width: fit-content;
   position: relative;
   white-space: nowrap;
-  margin: 0 0 -2vmax -1vw;
   font-family: "Comforter";
   padding: 1vmax 1vw 0 1vw;
+  margin: 1vmax 0 -2vmax -1vw;
   color: var(--text-accent-main);
 }
 body {
@@ -163,12 +163,6 @@ svg {
   0% { transform: rotate(0deg); }
   25%, 100% { transform: rotate(360deg); }
 }
-.menu-wrapper {
-  display: flex;
-  padding-bottom: 2vmax;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
 .lang-wrapper > label {
   border: none;
   padding-right: 0;
@@ -177,11 +171,11 @@ svg {
   background: transparent;
   font-size: clamp(1rem, 1vmin + 1rem, 4rem);
 }
-.lang-wrapper, 
-.menu-wrapper {
+.lang-wrapper {
   overflow-y: hidden;
+  width: min-content;
   height: fit-content;
-  min-width: fit-content;
+  grid-column-start: -1;
 }
 .row {
 	gap: 1.5vmax;
@@ -295,6 +289,9 @@ svg {
   #close {
     width: 4vmax;
     height: 4vmax;
+  }
+  .lang-wrapper {
+    width: fit-content;
   }
 }
 @media (prefers-color-scheme: light) {

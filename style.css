@@ -63,7 +63,7 @@ h1 {
   white-space: nowrap;
   font-family: "Comforter";
   padding: 1vmax 1vw 0 1vw;
-  margin: 1vmax 0 -2vmax -1vw;
+  margin: 1vmax 0 -2.5vmax -1vw;
   color: var(--text-accent-main);
 }
 body {

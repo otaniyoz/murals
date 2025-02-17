@@ -54,6 +54,7 @@ nav {
   padding-right: calc(clamp(0.6rem, 1vmin + 0.6rem + 2vmin + 1vmin, 2rem) + 2.5vh + 1px);
 }
 h1 {
+  z-index: -12;
   display: block;
   overflow: visible;
   margin-left: -2vw;

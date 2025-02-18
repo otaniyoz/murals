@@ -58,6 +58,7 @@ h1 {
   display: block;
   overflow: visible;
   margin-left: -2vw;
+  margin-bottom: -2vh;
   line-height: 0.8em;
   width: fit-content;
   position: relative;
